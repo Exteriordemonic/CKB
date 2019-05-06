@@ -80,3 +80,8 @@ TODO:
 
 
 
+MY TASKS:
+- [ ] Change small slider on timelapse 
+- [ ] Create RWD
+
+
