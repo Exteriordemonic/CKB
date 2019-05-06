@@ -83,5 +83,8 @@ TODO:
 MY TASKS:
 - [ ] Change small slider on timelapse 
 - [ ] Create RWD
+- [ ] Fill with correct content
+- [ ] Lazyload for preloader
+- [ ] Fix contruction 
 
 
