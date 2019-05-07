@@ -14,7 +14,7 @@ class IndexPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      card : 0,
+      card : 1,
     };
     this.selectCardHandle = this.selectCardHandle.bind(this); 
   }
@@ -36,6 +36,7 @@ class IndexPage extends Component {
         <SkewBackground>
           <About />
           <PoziomCardSection selectCard={this.selectCardHandle} card={this.state.card} />
+          <Poziom card={this.state.card} />
         </SkewBackground>
       </Layout>
     )

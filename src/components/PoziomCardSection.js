@@ -12,9 +12,9 @@ const PoziomCardSection = ({selectCard, card}) => {
   return (
     <ContainerStyled>
       <PoziomCardSectionStyled>
-        <PoziomCardStyled onClick={selectCard} data-index="0" title="adept" dni="120" active={card === "0" ? true : false} />
-        <PoziomCardStyled onClick={selectCard} data-index="1" title="active" dni="120"active={card === "1" ? true : false} />
-        <PoziomCardStyled onClick={selectCard} data-index="2" title="advanced" dni="&"active={card === "2" ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="0" title="adept" dni="120" active={card == 0 ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="1" title="active" dni="120" active={card == 1 ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="2" title="advanced" dni="&" active={card == 2 ? true : false} />
       </PoziomCardSectionStyled>
     </ContainerStyled>
   )
@@ -27,6 +27,9 @@ const PoziomCardSectionStyled = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media(max-width: 768px) {
     display: none;
