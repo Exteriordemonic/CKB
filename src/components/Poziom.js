@@ -119,10 +119,12 @@ const PoziomTitle = styled(TitleStyled)`
 const PoziomText = styled(TextStyled)`
   margin-right: 50%;
   margin-bottom: 60px;
+  width: 500px;
 
   @media (max-width: 768px) {
     width: 100%;
     margin-bottom: 0;
+    min-width: 100%;
   }
 `
 
