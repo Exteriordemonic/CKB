@@ -9,6 +9,11 @@ import SkewBackground from "../components/SkewBackground"
 import About from "../components/About"
 import PoziomCardSection from "../components/PoziomCardSection"
 import Poziom from "../components/Poziom"
+import ImagesGrid from "../components/ImagesGrid"
+
+import HeroImage from '../images/ckb.jpg'
+
+const Images = [HeroImage, HeroImage,HeroImage, HeroImage, HeroImage,HeroImage, HeroImage, HeroImage]
 
 class IndexPage extends Component {
   constructor(props) {
@@ -38,6 +43,7 @@ class IndexPage extends Component {
           <PoziomCardSection selectCard={this.selectCardHandle} card={this.state.card} />
           <Poziom card={this.state.card} />
         </SkewBackground>
+        <ImagesGrid images={Images}/>
       </Layout>
     )
   }

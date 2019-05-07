@@ -68,11 +68,4 @@ class Navigation extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    isAuthenticated: state.auth.isAuthenticated,
-    user: state.user
-  }
-}
-
 export default Navigation;

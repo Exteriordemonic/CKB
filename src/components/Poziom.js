@@ -66,6 +66,7 @@ const Poziom = ({card}) => {
 
 const Wrapper = styled.div`
   position: relative;
+  display: ${props => props.mobile ? "none" : "initial"};
 
   @media (max-width: 768px) {
     display: ${props => props.mobile ? "initial" : "none"};
