@@ -15,7 +15,18 @@ import Sala from "../components/Sala"
 
 import HeroImage from '../images/ckb.jpg'
 
-const Images = [HeroImage, HeroImage,HeroImage, HeroImage, HeroImage,HeroImage, HeroImage, HeroImage]
+import G1 from '../images/g-1.jpg'
+import G2 from '../images/g-2.jpg'
+import G3 from '../images/g-3.jpg'
+import G4 from '../images/g-4.jpg'
+import G5 from '../images/g-5.jpg'
+import G6 from '../images/g-6.jpg'
+import G7 from '../images/g-7.jpg'
+import G8 from '../images/g-8.jpg'
+
+import SalaImg from '../images/sala.jpg'
+
+const Images = [G7, G2,G3, G4, G5,G6, G1, G8]
 
 class IndexPage extends Component {
   constructor(props) {
@@ -47,7 +58,7 @@ class IndexPage extends Component {
         </SkewBackground>
         <ImagesGrid images={Images}/>
         <Wiedza />
-        <Sala background={HeroImage} />
+        <Sala background={SalaImg} />
       </Layout>
     )
   }

@@ -8,28 +8,29 @@ import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 
 import CKB from "../images/ckb.jpg" 
+import MCT from "../images/mct.jpg" 
 
 const About = props => {
   return (
     <ContainerStyled>
       <AboutStyled>
         <AboutInfo>
-          <TitleStyled className="subtitle bold" minor>CZYM JEST</TitleStyled>
-          <AboutTitle className="title bold">CKB Mrągowo</AboutTitle>
+          <TitleStyled className="subtitle bold" minor>MCT</TitleStyled>
+          <AboutTitle className="title bold">Mrągowskie Centrum Treningowe</AboutTitle>
           <AboutText className="text">
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            Nulla quis lorem ut libero malesuada feugiat. Mauris blandit
-            aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet
-            quam id dui posuere blandit.Mauris blandit aliquet elit, eget
-            tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.
-            Vivamus magna justo, lacinia eget consectetur sed, convallis at
-            tellus. Curabitur aliquet quam id dui posuere blandit.
+            to kompleksowa oferta rekreacyjno- sportowa, która zaspokoi potrzeby osób w każdym wieku i na każdym poziomie sportowym.
+            <br />
+            <br />
+            Jesteś młodym zawodnikiem sportów drużynowych lub indywidualnych? 
+            <br />
+            <br />
+            Zadbamy o poprawę wszystkich Twoich atrybutów motorycznych, jednocześnie korygując błędne wzorce ruchowe mające wpływ na to jak biegasz lub poruszasz się po boisku. Sprawimy, że będziesz silniejszy, szybszy i wytrzymalszy co przełoży się na szybki progres w Twojej docelowej dyscyplinie.
           </AboutText>
-          <LinkStyled className="subtitle bold" to={'/page2'}>Dowiedz się więcej</LinkStyled>
+          <LinkStyled className="subtitle bold" as="a" to="phone:+48508378847" >Zadzwoń: +48 508 378 847</LinkStyled>
         </AboutInfo>
         <AboutImages>
           <AboutImage1 src={CKB} />
-          <AboutImage2 src={CKB} />
+          <AboutImage2 src={MCT} />
         </AboutImages>
       </AboutStyled>
     </ContainerStyled>

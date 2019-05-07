@@ -6,6 +6,8 @@ import { TextStyled } from "./Text.styled"
 import Card from "../components/Card"
 import { ContainerStyled } from "../components/Container.styled"
 
+import C1 from '../images/mct.png';
+
 const Wiedza = () => {
   return (
     <WiedzaStyled>
@@ -17,45 +19,11 @@ const Wiedza = () => {
       </ContainerStyled>
       <ContainerStyled small>
         <CardsContainer>
-          <Card
-            title="Lorem ipsum"
-            image="https://images.unsplash.com/photo-1553467105-bdb9ae8a7eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+          <Card as="a" href="https://facebook.pl"
+            title="Facebook"
+            image={C1}
           >
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet
-            elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui
-            posuere blandit.Mauris blandit aliquet elit, eget tincidunt nibh
-            pulvinar a.
-          </Card>
-          <Card
-            title="Lorem ipsum"
-            image="https://images.unsplash.com/photo-1553467105-bdb9ae8a7eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
-          >
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet
-            elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui
-            posuere blandit.Mauris blandit aliquet elit, eget tincidunt nibh
-            pulvinar a.
-          </Card>
-          <Card
-            title="Lorem ipsum"
-            image="https://images.unsplash.com/photo-1553467105-bdb9ae8a7eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
-          >
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet
-            elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui
-            posuere blandit.Mauris blandit aliquet elit, eget tincidunt nibh
-            pulvinar a.
-          </Card>
-          <Card
-            title="Lorem ipsum"
-            image="https://images.unsplash.com/photo-1553467105-bdb9ae8a7eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
-          >
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet
-            elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui
-            posuere blandit.Mauris blandit aliquet elit, eget tincidunt nibh
-            pulvinar a.
+           Zapraszamy na nasz funpage na faceboku
           </Card>
         </CardsContainer>
       </ContainerStyled>

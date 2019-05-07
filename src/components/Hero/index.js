@@ -10,40 +10,52 @@ import Navigation from '../../blocks/Navigation'
 
 import { HeroWrapper } from './styled'
 
-import HeroImg from '../../images/hero.jpg'
-import HeroImg2 from '../../images/hero-2.jpg'
+import HeroImg from '../../images/bg-1.jpg'
+import HeroImg2 from '../../images/bg-2.jpg'
 import HeroImg3 from '../../images/hero-3.jpg'
 import SlideFooter from '../../blocks/SlideFooter';
 
-const SliderImages = [HeroImg, HeroImg2, HeroImg3];
+import Slider11 from '../../images/slider-1-1.jpg';
+import Slider12 from '../../images/slider-1-2.jpg';
+import Slider13 from '../../images/slider-1-3.jpg';
+import Slider14 from '../../images/slider-1-4.jpg';
+import Slider15 from '../../images/slider-1-5.jpg';
+
+import Slider21 from '../../images/slider-2-1.jpg';
+import Slider22 from '../../images/slider-2-2.jpg';
+import Slider23 from '../../images/slider-2-3.jpg';
+import Slider24 from '../../images/slider-2-4.jpg';
+import Slider25 from '../../images/slider-2-5.jpg';
+
+const SliderImages = [HeroImg, HeroImg2, HeroImg];
 
 const SmallSlider = [
-  [HeroImg, HeroImg2, HeroImg3],
-  [HeroImg, HeroImg2, HeroImg3],
-  [HeroImg, HeroImg2, HeroImg3],
+  [Slider11, Slider12, Slider13, Slider14, Slider15],
+  [Slider21, Slider22, Slider23, Slider24, Slider25],
+  [Slider11, Slider12, Slider13, Slider14, Slider15],
 ]
 
 const SliderContent = [
   [ 
-    {title: 'Cel', text: 'Technika'},
-    {title: 'Poziom', text: 'Adept'},
-    {title: 'Czas trwania', text: '120 dni'},
+    {title: 'Trening', text: 'Team'},
+    {title: 'Cena', text: '120zł'},
+    {title: 'Czas trwania', text: '1h'},
   ],
   [ 
-    {title: 'Cel', text: 'Sylwetka'},
-    {title: 'Poziom', text: 'Activ'},
-    {title: 'Czas trwania', text: '120 dni'},
+    {title: 'Trening', text: 'Personal'},
+    {title: 'Cena', text: '100zł'},
+    {title: 'Czas trwania', text: '1h'},
   ],
   [ 
-    {title: 'Cel', text: 'Siła'},
-    {title: 'Poziom', text: 'Advenced'},
-    {title: 'Czas trwania', text: 'Whole life'},
+    {title: 'Trening', text: 'Duo'},
+    {title: 'Cena', text: '50zł/os'},
+    {title: 'Czas trwania', text: '1h'},
   ],
 ]
 
 const Title = {
-  top: 'CKB Mrągowo',
-  bottom: 'trening kettlebell'
+  top: 'MCT - Mrągowskie',
+  bottom: 'centrum treningowe'
 }
 
 export default class Hero extends Component {
@@ -93,8 +105,8 @@ export default class Hero extends Component {
             <HeroWrapper.Image src={SliderImages[this.state.slide]} alt=""/>
         </CSSTransition>
         </TransitionGroup>
-        <HeroWrapper.Title as="span" className="headline">
-          Hard style
+        <HeroWrapper.Title as="span" className="title">
+          Bądź  <span className="special">NAJLEPSZĄ</span>   <br /> WERSJĄ SIEBIE
         </HeroWrapper.Title>
         <Navigation />
         

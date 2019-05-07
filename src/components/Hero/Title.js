@@ -10,6 +10,8 @@ const Title = styled.span`
   left: ${Gutter * 10}px;
   color: ${Colors.light};
   text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 900;
 
   &:before {
     content: '';

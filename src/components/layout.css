@@ -643,6 +643,10 @@ pre tt:after {
   font-size: 16px;
 }
 
+.special {
+  color: #9c0a0e; 
+}
+
 @media only screen and (max-width: 1300px) {
   .headline {
     font-size: 36px;

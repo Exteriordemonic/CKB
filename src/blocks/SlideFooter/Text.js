@@ -7,6 +7,7 @@ const Text = styled.p`
   transition: 0.8s;
   position: absolute;
   font-weight: 700;
+  text-transform: none;
 
   &.text-exit {
     white-space: nowrap;

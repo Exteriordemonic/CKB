@@ -44,7 +44,7 @@ const Sala = ({ background }) => {
             Vivamus magna justo, lacinia eget consectetur sed, convallis at
             tellus. Curabitur aliquet quam id dui posuere blandit.
           </SalaText>
-          <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled>
+          {/* <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled> */}
         </SalaInfo>
         {/* <SalaIcons>
           <SalaIconElement>
@@ -79,7 +79,10 @@ const SalaContainer = styled(ContainerStyled)`
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: 100px 0;
+  margin: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  
 `
 
 const SalaBackground = styled.div`

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Card = (props) => {
     return (
-        <CardStyled>
+        <CardStyled as="a" href="https://www.facebook.com/pg/MCTreningowe">
             <CardImage src={props.image}></CardImage>
             <CardTitle className="subtitle bold">{props.title}</CardTitle>
             <CardText className="text">{props.children}</CardText>
@@ -22,12 +22,13 @@ const CardStyled = styled.div`
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    text-decoration: none;
 `
 
 const CardImage = styled.img`
     height: 200px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 `
 
 const CardTitle = styled.h3`

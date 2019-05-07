@@ -10,16 +10,16 @@ import { ContainerStyled } from "../components/Container.styled"
 
 const Data = [
   {
-    title: 'ADEPT',
-    content: 'Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus.Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    title: 'Personal',
+    content: 'Trening indywidualny gdzie skupiamy się tylko na Tobie. Rozwiń Swoje umiejętności i stać się królem strzelców'
   },
   {
-    title: 'ACTIVE',
-    content: 'Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus.Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.Sed porttitor lectus nibh. Vivamus suscipit tortor  suscipit eget felis  suscipit porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    title: 'Team',
+    content: 'Jestes Trenerem młodego, rokującego zespołu?'
   },
   {
-    title: 'ADVANCED',
-    content: 'Nulla porttitor accumsan t Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus.Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    title: 'Duet',
+    content: 'Trenuj ze Swoim najlepszym przyjacielem i razem zdobywajcie szczyty'
   },
 ]
 
@@ -27,7 +27,7 @@ const Poziom = ({card}) => {
   return (
     <PoziomStyled>
       <ContainerStyled>
-        <PoziomLabel as="span" className="subtitle bold" minor>Poziom</PoziomLabel>
+        <PoziomLabel as="span" className="subtitle bold" minor>Trening</PoziomLabel>
         <Wrapper>
           <TransitionGroup className="image-wrapper">
             <CSSTransition 
@@ -41,7 +41,7 @@ const Poziom = ({card}) => {
                     <PoziomText className="text">
                       {Data[card].content}
                     </PoziomText>
-                    <LinkStyled className="subtitle bold">Zapisz sie na zajecia</LinkStyled>
+                    <LinkStyled className="subtitle bold" as="a" to="phone:+48508378847" >Zadzwoń: +48 508 378 847</LinkStyled>
                   </LVL>
               </CSSTransition>
             </TransitionGroup>

@@ -1,7 +1,7 @@
 const Colors = {
   light: '#fff',
   dark: '#000',
-  special: '#CD9843'
+  special: '#9c0a0e'
 }
 
 const FontSize = {

@@ -30,4 +30,8 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
+  .special {
+    color: ${colors.golden};
+  }
 `

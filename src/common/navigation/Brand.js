@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {Gutter} from '../../vendors/variables'
 
 const Brand = styled.div`
-  padding: ${Gutter*2}px ${Gutter*2}px ${Gutter*2}px ${Gutter*10}px;
+  padding: ${Gutter*0}px ${Gutter*2}px ${Gutter*0}px ${Gutter*10}px;
   background-color: black;
 
   @media (max-width: 768px) {

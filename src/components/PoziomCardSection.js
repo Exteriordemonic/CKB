@@ -12,9 +12,9 @@ const PoziomCardSection = ({selectCard, card}) => {
   return (
     <ContainerStyled>
       <PoziomCardSectionStyled>
-        <PoziomCardStyled onClick={selectCard} data-index="0" title="adept" dni="120" active={card == 0 ? true : false} />
-        <PoziomCardStyled onClick={selectCard} data-index="1" title="active" dni="120" active={card == 1 ? true : false} />
-        <PoziomCardStyled onClick={selectCard} data-index="2" title="advanced" dni="&" active={card == 2 ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="0" title="Personal" dni="100" active={card == 0 ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="1" title="Team" dni="120" active={card == 1 ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="2" title="Duet" dni="100" active={card == 2 ? true : false} />
       </PoziomCardSectionStyled>
     </ContainerStyled>
   )
