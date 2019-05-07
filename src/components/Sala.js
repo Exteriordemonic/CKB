@@ -31,11 +31,11 @@ const Sala = ({ background }) => {
       <SalaBackgroundOverlay />
       <SalaBackground>
         <SalaInfo>
-          <TitleStyled minor inverted>
+          <TitleStyled className="subtitle bold" minor inverted>
             Nasza
           </TitleStyled>
-          <SalaTitle inverted>Sala</SalaTitle>
-          <SalaText inverted>
+          <SalaTitle className="title bold" inverted>Sala</SalaTitle>
+          <SalaText className="text" inverted>
             Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
             Nulla quis lorem ut libero malesuada feugiat. Mauris blandit
             aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet
@@ -44,9 +44,9 @@ const Sala = ({ background }) => {
             Vivamus magna justo, lacinia eget consectetur sed, convallis at
             tellus. Curabitur aliquet quam id dui posuere blandit.
           </SalaText>
-          <LinkStyled inverted>Zapisz sie na zajecia</LinkStyled>
+          <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled>
         </SalaInfo>
-        <SalaIcons>
+        {/* <SalaIcons>
           <SalaIconElement>
             <i>{kettleBellIcon}</i>8 x 8kg
           </SalaIconElement>
@@ -68,7 +68,7 @@ const Sala = ({ background }) => {
           <SalaIconElement>
             <i>{benchPressIcon}</i>max 200kg
           </SalaIconElement>
-        </SalaIcons>
+        </SalaIcons> */}
       </SalaBackground>
     </SalaContainer>
   )
@@ -115,7 +115,7 @@ const SalaTitle = styled(TitleStyled)`
 `
 
 const SalaText = styled(TextStyled)`
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 `
 
 const SalaInfo = styled.div`

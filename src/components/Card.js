@@ -6,8 +6,8 @@ const Card = (props) => {
     return (
         <CardStyled>
             <CardImage src={props.image}></CardImage>
-            <CardTitle>{props.title}</CardTitle>
-            <CardText>{props.children}</CardText>
+            <CardTitle className="subtitle bold">{props.title}</CardTitle>
+            <CardText className="text">{props.children}</CardText>
         </CardStyled>
     )
 }

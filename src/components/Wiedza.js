@@ -10,10 +10,10 @@ const Wiedza = () => {
   return (
     <WiedzaStyled>
       <ContainerStyled>
-        <TitleStyled minor>
+        <TitleStyled className="subtitle bold" minor>
           SEKCJA
         </TitleStyled>
-        <WiedzaTitle>WIEDZY</WiedzaTitle>
+        <WiedzaTitle className="title bold">WIEDZY</WiedzaTitle>
       </ContainerStyled>
       <ContainerStyled small>
         <CardsContainer>

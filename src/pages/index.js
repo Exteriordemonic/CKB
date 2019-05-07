@@ -10,6 +10,8 @@ import About from "../components/About"
 import PoziomCardSection from "../components/PoziomCardSection"
 import Poziom from "../components/Poziom"
 import ImagesGrid from "../components/ImagesGrid"
+import Wiedza from "../components/Wiedza"
+import Sala from "../components/Sala"
 
 import HeroImage from '../images/ckb.jpg'
 
@@ -44,6 +46,8 @@ class IndexPage extends Component {
           <Poziom card={this.state.card} />
         </SkewBackground>
         <ImagesGrid images={Images}/>
+        <Wiedza />
+        <Sala background={HeroImage} />
       </Layout>
     )
   }
