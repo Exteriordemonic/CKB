@@ -7,7 +7,7 @@ const PoziomCard = props => {
   return (
     <PoziomCardStyled {...props}>
       <h3 className="title">{props.title}</h3>
-      <span className="text"> zł/h</span>
+      <span className="text"> zł/msc</span>
       <span className="title">{props.dni}</span>
       <PoziomCardIcon>
         {props.active ? (

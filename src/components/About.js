@@ -7,24 +7,18 @@ import { LinkStyled } from "./Link.styled"
 import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 
-import CKB from "../images/ckb.jpg" 
-import MCT from "../images/mct.jpg" 
+import CKB from "../images/kb-2.jpg" 
+import MCT from "../images/kb-3.jpg" 
 
 const About = props => {
   return (
     <ContainerStyled>
       <AboutStyled>
         <AboutInfo>
-          <TitleStyled className="subtitle bold" minor>MCT</TitleStyled>
-          <AboutTitle className="title bold">Mrągowskie Centrum Treningowe</AboutTitle>
+          <TitleStyled className="subtitle bold" minor>CKB</TitleStyled>
+          <AboutTitle className="title bold">Centrum Ketllebell Mrągowo</AboutTitle>
           <AboutText className="text">
-            to kompleksowa oferta rekreacyjno- sportowa, która zaspokoi potrzeby osób w każdym wieku i na każdym poziomie sportowym.
-            <br />
-            <br />
-            Jesteś młodym zawodnikiem sportów drużynowych lub indywidualnych? 
-            <br />
-            <br />
-            Zadbamy o poprawę wszystkich Twoich atrybutów motorycznych, jednocześnie korygując błędne wzorce ruchowe mające wpływ na to jak biegasz lub poruszasz się po boisku. Sprawimy, że będziesz silniejszy, szybszy i wytrzymalszy co przełoży się na szybki progres w Twojej docelowej dyscyplinie.
+            Pierwszy w Mrągowie i powiecie klub prowadzący zajęcia Hardstyle Kettlebell wg. Pavla Tsatsoulina przez Certyfikowanego Instruktora Strong First SFG1
           </AboutText>
           <LinkStyled className="subtitle bold" as="a" href="tel:+48508378847" >Zadzwoń: +48 508 378 847</LinkStyled>
         </AboutInfo>
