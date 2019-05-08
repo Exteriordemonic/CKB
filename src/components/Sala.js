@@ -43,7 +43,7 @@ const Sala = ({ background }) => {
           - BOSU, TRX, berety stabilizacyjne, power bands, mini bands, rollery
 
           </SalaText>
-          <SalaTitle  as="p" className="text" inverted>Fotokomórki <span className="special">TEST YOU</span> do testów sprawnościowych</SalaTitle>
+          <SalaText  as="p" className="text" inverted>Fotokomórki <span className="special">TEST YOU</span> do testów sprawnościowych</SalaText>
 
           {/* <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled> */}
         </SalaInfo>
