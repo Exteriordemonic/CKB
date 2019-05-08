@@ -8,7 +8,7 @@ import { Link } from "gatsby"
 import SuperNav from '../SuperNav'
 
 // import logo
-import logo from '../../images/mct.png'
+import logo from '../../images/logo.png'
 
 import Header from './Header'
 
