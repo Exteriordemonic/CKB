@@ -8,18 +8,20 @@ import { LinkStyled } from "./Link.styled"
 import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 
+import Header from './sectionHeader'
+
 const Data = [
   {
     title: 'Personal',
-    content: 'Trening indywidualny gdzie skupiamy się tylko na Tobie. Rozwiń Swoje umiejętności i stać się królem strzelców'
+    content: 'Trening indywidualny w formule 1x1 z trenerem, w ramach którego znajduje się: ocena funkcjonalna według testu MCS1, indywidualnie dobrany plan treningowy, kontrola postępów, baza danych z wynikami, maksymalna efektywność pracy, bezpośrednia motywacja i wsparcie trenera.'
   },
   {
     title: 'Team',
-    content: 'Jestes Trenerem młodego, rokującego zespołu?'
+    content: 'Treningi grupowe od 10 do 15 zawodników, w których znajduje się: ocena funkcjonalna według testu MCS1, testy motoryczne przed i po określonym okresie współpracy, grupowy plan treningowy ukierunkowany na najsłabsze punkty i kluczowe aspekty dyscypliny, baza danych z wynikami testów dla rodziców i trenerów.'
   },
   {
     title: 'Duet',
-    content: 'Trenuj ze Swoim najlepszym przyjacielem i razem zdobywajcie szczyty'
+    content: 'trening w formule 2x1 z trenerem, w którym znajduje się: ocena funkcjonalna według testu MCS1, indywidualnie dobrany plan treningowy, kontrola postępów, baza danych z wynikami, maksymalna efektywność pracy, bezpośrednia motywacja i wsparcie trenera.'
   },
 ]
 
@@ -27,7 +29,6 @@ const Poziom = ({card}) => {
   return (
     <PoziomStyled>
       <ContainerStyled>
-        <PoziomLabel as="span" className="subtitle bold" minor>Trening</PoziomLabel>
         <Wrapper>
           <TransitionGroup className="image-wrapper">
             <CSSTransition 
@@ -36,17 +37,21 @@ const Poziom = ({card}) => {
                 timeout={{enter: 900, exit:800}}
             >
                   <LVL> 
-                    
-                    <PoziomTitle className="title bold">{Data[card].title}</PoziomTitle>
+                    <Header title='Trening' subtitle={Data[card].title}/>
                     <PoziomText className="text">
                       {Data[card].content}
                     </PoziomText>
-                    <LinkStyled className="subtitle bold" as="a" to="phone:+48508378847" >Zadzwoń: +48 508 378 847</LinkStyled>
+                    <LinkStyled className="subtitle bold" as="a" href="tel:+48508378847" >
+                      
+                        Zadzwoń: +48 508 378 847
+                      
+                    </LinkStyled>
                   </LVL>
               </CSSTransition>
             </TransitionGroup>
         </Wrapper>
         <Wrapper mobile>
+          <Header title='Trening'/>
           { Data.map((value, index) => {
             return (
               <LVL key={index}> 

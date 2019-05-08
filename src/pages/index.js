@@ -12,6 +12,7 @@ import Poziom from "../components/Poziom"
 import ImagesGrid from "../components/ImagesGrid"
 import Wiedza from "../components/Wiedza"
 import Sala from "../components/Sala"
+import Podopieczni from "../components/Podopieczni"
 
 import HeroImage from '../images/ckb.jpg'
 
@@ -49,7 +50,7 @@ class IndexPage extends Component {
   render() {
     return(
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Strona główna" keywords={[`Przygotowanie motoryczne`, `mazury`, `mragowo`, 'treningi']} />
         <Hero />
         <SkewBackground>
           <About />
@@ -58,7 +59,10 @@ class IndexPage extends Component {
         </SkewBackground>
         <ImagesGrid images={Images}/>
         <Wiedza />
+        <SkewBackground>
         <Sala background={SalaImg} />
+          <Podopieczni />
+        </SkewBackground>
       </Layout>
     )
   }

@@ -5,6 +5,8 @@ import { LinkStyled } from "./Link.styled"
 import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 
+import Header from './sectionHeader'
+
 const Sala = ({ background }) => {
   const kettleBellIcon = (
     <svg
@@ -31,19 +33,18 @@ const Sala = ({ background }) => {
       <SalaBackgroundOverlay />
       <SalaBackground>
         <SalaInfo>
-          <TitleStyled className="subtitle bold" minor inverted>
-            Nasza
-          </TitleStyled>
-          <SalaTitle className="title bold" inverted>Sala</SalaTitle>
+          <Header title="Nasza" subtitle="Sala treningowa" isInverted/>
           <SalaText className="text" inverted>
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-            Nulla quis lorem ut libero malesuada feugiat. Mauris blandit
-            aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet
-            quam id dui posuere blandit.Mauris blandit aliquet elit, eget
-            tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.
-            Vivamus magna justo, lacinia eget consectetur sed, convallis at
-            tellus. Curabitur aliquet quam id dui posuere blandit.
+          - 200 m2 <br />
+          - dwie sale treningowe, szatnie, toaleta, recepcja <br />
+          - Odważniki serii CKB PRO i Girya Fitness w zakresie od 4 kg do 48 kg <br />
+          - Sztangi i obciążenie do 200 kg <br />
+          - Sprzęt do kształtowania koordynacji <br />
+          - BOSU, TRX, berety stabilizacyjne, power bands, mini bands, rollery
+
           </SalaText>
+          <SalaTitle  as="p" className="text" inverted>Fotokomórki <span className="special">TEST YOU</span> do testów sprawnościowych</SalaTitle>
+
           {/* <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled> */}
         </SalaInfo>
         {/* <SalaIcons>

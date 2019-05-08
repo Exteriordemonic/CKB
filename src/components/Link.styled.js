@@ -12,4 +12,5 @@ export const LinkStyled = styled(Link)`
   width: fit-content;
   cursor: pointer;
   text-decoration: none;
+  cursor: pointer;
 `

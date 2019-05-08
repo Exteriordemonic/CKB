@@ -6,16 +6,15 @@ import { TextStyled } from "./Text.styled"
 import Card from "../components/Card"
 import { ContainerStyled } from "../components/Container.styled"
 
+import Header from './sectionHeader'
+
 import C1 from '../images/mct.png';
 
 const Wiedza = () => {
   return (
     <WiedzaStyled>
       <ContainerStyled>
-        <TitleStyled className="subtitle bold" minor>
-          SEKCJA
-        </TitleStyled>
-        <WiedzaTitle className="title bold">WIEDZY</WiedzaTitle>
+        <Header title="Sekcja" subtitle="Wiedzy" />
       </ContainerStyled>
       <ContainerStyled small>
         <CardsContainer>

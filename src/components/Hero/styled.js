@@ -79,6 +79,12 @@ const HeroWrapper = styled.section`
     left: ${Gutter * 14}px;
     z-index: ${Index.Navigation};
 
+    @media (max-width: 1200px) {
+      z-index: ${Index.Slider + Index.Label};
+      top: ${Gutter * 21}px;
+      left: ${Gutter * 10}px;
+    }
+
     @media (max-width: 768px) {
       z-index: ${Index.Slider + Index.Label};
       left: ${Gutter * 5}px; 

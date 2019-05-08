@@ -26,7 +26,7 @@ const About = props => {
             <br />
             Zadbamy o poprawę wszystkich Twoich atrybutów motorycznych, jednocześnie korygując błędne wzorce ruchowe mające wpływ na to jak biegasz lub poruszasz się po boisku. Sprawimy, że będziesz silniejszy, szybszy i wytrzymalszy co przełoży się na szybki progres w Twojej docelowej dyscyplinie.
           </AboutText>
-          <LinkStyled className="subtitle bold" as="a" to="phone:+48508378847" >Zadzwoń: +48 508 378 847</LinkStyled>
+          <LinkStyled className="subtitle bold" as="a" href="tel:+48508378847" >Zadzwoń: +48 508 378 847</LinkStyled>
         </AboutInfo>
         <AboutImages>
           <AboutImage1 src={CKB} />

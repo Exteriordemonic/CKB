@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Card = (props) => {
     return (
         <CardStyled as="a" href="https://www.facebook.com/pg/MCTreningowe">
-            <CardImage src={props.image}></CardImage>
+            <CardImage src={props.image} cover={props.cover}></CardImage>
             <CardTitle className="subtitle bold">{props.title}</CardTitle>
             <CardText className="text">{props.children}</CardText>
         </CardStyled>
@@ -26,9 +26,10 @@ const CardStyled = styled.div`
 `
 
 const CardImage = styled.img`
-    height: 200px;
+    height: 300px;
     width: 100%;
-    object-fit: contain;
+    object-fit: ${props => props.cover ? 'cover':'contain'};
+    object-position: ${props => props.cover ? '0 -40px':'0'} ;
 `
 
 const CardTitle = styled.h3`
