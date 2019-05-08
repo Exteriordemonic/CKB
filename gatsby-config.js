@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `MCT`,
-    description: `Przygotowanie motoryczne`,
+    title: `CKB`,
+    description: `Trennigni Kettlebell StrongFirst`,
     author: `@gatsbyjs`,
   },
   plugins: [

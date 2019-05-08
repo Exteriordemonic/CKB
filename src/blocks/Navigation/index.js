@@ -6,25 +6,16 @@ const Nav = () => (
   <Navigation>
     <Navigation.List>
       <Navigation.Item className="subtitle">
-        Przygotwanie motoryczne
+        Siła
       </Navigation.Item>
-      <Navigation.Item small className="text">
-        Siła 
+      <Navigation.Item className="subtitle">
+        Wytrzymałość
       </Navigation.Item>
-      <Navigation.Item small className="text">
-        Moc 
+      <Navigation.Item className="subtitle">
+        Mobilność
       </Navigation.Item>
-      <Navigation.Item small className="text">
-        Szybkość 
-      </Navigation.Item>
-      <Navigation.Item small className="text">
-        Wytrzymałość 
-      </Navigation.Item>
-      <Navigation.Item small className="text">
-        Zwinność 
-      </Navigation.Item>
-      <Navigation.Item small className="text">
-        Mobilność 
+      <Navigation.Item className="subtitle">
+        Zdrowie
       </Navigation.Item>
     </Navigation.List>
   </Navigation>

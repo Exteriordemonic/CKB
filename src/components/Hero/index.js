@@ -60,8 +60,8 @@ const SliderContent = [
 ]
 
 const Title = {
-  top: 'MCT - Mrągowskie',
-  bottom: 'centrum treningowe'
+  top: 'Centrum Kettlebell',
+  bottom: 'Mrągowo'
 }
 
 export default class Hero extends Component {
@@ -111,8 +111,8 @@ export default class Hero extends Component {
             <HeroWrapper.Image src={SliderImages[this.state.slide]} alt=""/>
         </CSSTransition>
         </TransitionGroup>
-        <HeroWrapper.Title as="span" className="title">
-          Bądź  <span className="special">NAJLEPSZĄ</span>   <br /> WERSJĄ SIEBIE
+        <HeroWrapper.Title as="span" className="headline">
+          HARD STYLE
         </HeroWrapper.Title>
         <Navigation />
         
