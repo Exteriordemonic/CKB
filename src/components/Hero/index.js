@@ -44,17 +44,17 @@ const SmallSlider = [
 const SliderContent = [
   [ 
     {title: 'Trening', text: 'Team'},
-    {title: 'Cena', text: '120zł'},
+    {title: 'Cena', text: '150zł'},
     {title: 'Czas trwania', text: '1h'},
   ],
   [ 
     {title: 'Trening', text: 'Personal'},
-    {title: 'Cena', text: '100zł'},
+    {title: 'Cena', text: '90zł'},
     {title: 'Czas trwania', text: '1h'},
   ],
   [ 
-    {title: 'Trening', text: 'Duo'},
-    {title: 'Cena', text: '50zł/os'},
+    {title: 'Trening', text: 'Duet'},
+    {title: 'Cena', text: '120zł'},
     {title: 'Czas trwania', text: '1h'},
   ],
 ]

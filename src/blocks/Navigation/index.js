@@ -6,7 +6,7 @@ const Nav = () => (
   <Navigation>
     <Navigation.List>
       <Navigation.Item className="subtitle">
-        Przygotwanie motoryczne
+        Przygotowanie motoryczne
       </Navigation.Item>
       <Navigation.Item small className="text">
         Siła 
