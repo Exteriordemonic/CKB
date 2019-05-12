@@ -5,6 +5,14 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import Slider from './Slider.js'
 
+import Slider11 from '../../images/slider-e-1.jpg';
+import Slider12 from '../../images/slider-1-2.jpg';
+import Slider13 from '../../images/slider-1-3.jpg';
+import Slider14 from '../../images/slider-e-4.jpg';
+import Slider15 from '../../images/slider-e-5.jpg';
+
+const SmallSlider = [Slider11, Slider12, Slider13, Slider14, Slider15];
+
 export default class Slide extends Component {
   constructor(props) {
     super(props)
@@ -19,7 +27,7 @@ export default class Slide extends Component {
   }
   
   static propTypes = {
-    data: PropTypes.any
+    data: PropTypes.object
   }
 
   changeSlide(e) {
@@ -65,4 +73,9 @@ export default class Slide extends Component {
       </Slider>
     )
   }
+}
+
+
+Slide.defaultProps  = {
+  data: SmallSlider
 }
