@@ -12,7 +12,16 @@ const Label = props => (
 )
 
 
+Label.propTypes = {
+  label: PropTypes.object
+};
 
+Label.defaultProps = {
+  label: {
+    top: 'Hello',
+    bottom: 'Gatsby'
+  }
+};
 
 
 export default Label;

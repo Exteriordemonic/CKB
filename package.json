@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@storybook/addon-knobs": "^5.0.11",
     "gatsby": "^2.4.2",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -19,6 +20,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-transition-group": "^4.0.0",
+    "save-dev": "^2.0.0",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
