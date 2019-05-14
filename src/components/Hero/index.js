@@ -12,7 +12,7 @@ import { HeroWrapper } from './styled'
 
 import HeroImg from '../../images/bg-1.jpg'
 import HeroImg2 from '../../images/bg-2.jpg'
-import HeroImg3 from '../../images/hero-3.jpg'
+import HeroImg3 from '../../images/bg-3.jpg'
 import SlideFooter from '../../blocks/SlideFooter';
 
 import Slider11 from '../../images/Slider/Slider-1.jpg';
@@ -31,7 +31,7 @@ import Slider33 from '../../images/slider-e-8.jpg';
 import Slider34 from '../../images/slider-e-6.jpg';
 import Slider35 from '../../images/slider-e-7.jpg';
 
-const SliderImages = [HeroImg, HeroImg2, HeroImg];
+const SliderImages = [HeroImg, HeroImg2, HeroImg3];
 
 const SmallSlider = [
   [Slider11, Slider12, Slider13],
