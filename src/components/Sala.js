@@ -7,6 +7,8 @@ import { ContainerStyled } from "../components/Container.styled"
 
 import Header from './sectionHeader'
 
+import TestYou from '../images/testyou.png'
+
 const Sala = ({ background }) => {
   const kettleBellIcon = (
     <svg
@@ -43,7 +45,15 @@ const Sala = ({ background }) => {
           - BOSU, TRX, berety stabilizacyjne, power bands, mini bands, rollery
 
           </SalaText>
-          <SalaText  as="p" className="text" inverted>Fotokomórki <span className="special">TEST YOU</span> do testów sprawnościowych</SalaText>
+          <SalaText  as="p" className="text" inverted>Fotokomórki <span className="special">
+            TEST YOU</span> do testów sprawnościowych
+            <br />
+            <br />
+            <img src={TestYou} />
+          </SalaText>
+          <LinkStyled className="subtitle bold" inverted as="a" href="https://testyou.pl/timing/pl/" >   
+            Dowiedz się więcej      
+          </LinkStyled>
 
           {/* <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled> */}
         </SalaInfo>

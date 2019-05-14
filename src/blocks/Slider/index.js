@@ -22,6 +22,13 @@ export default class Slide extends Component {
     data: PropTypes.any
   }
 
+  componentDidMount() {
+    setInterval(() => {
+      console.log('Big test data');
+      this.nextSlide();
+    }, 3000);
+  }
+
   changeSlide(e) {
     this.setState({
       current: e.target.getAttribute('data-index')

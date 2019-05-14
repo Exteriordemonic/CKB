@@ -9,9 +9,48 @@ import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 import Card from "../components/Card"
 
-import C1 from '../images/g-7.jpg';
+import Alec_fereniec from '../images/zawodnicy/alec_fereniec.jpg';
+import Alek_kwiatek from '../images/zawodnicy/alek_kwiatek.jpg';
+import Dawid_radziwanowski from '../images/zawodnicy/dawid_radziwanowski.jpg';
+import Filip_iwanowicz from '../images/zawodnicy/filip_iwanowicz.jpg';
+import Julian_orlowski from '../images/zawodnicy/julian_orlowski.jpg';
+import Lukasz_rutkowski from '../images/zawodnicy/lukasz_rutkowski.jpg';
+import Adrian_joc from '../images/zawodnicy/adrian_joc.jpg';
 
 import Header from './sectionHeader'
+
+const Data = [
+  {
+    image: Alec_fereniec,
+    title: 'Alec Fereniec' 
+  },
+  {
+    image: Alek_kwiatek,
+    title: 'Aleksander Kwiatek' 
+  },
+  {
+    image: Dawid_radziwanowski,
+    title: 'Dawid Radziwanowski' 
+  },
+  {
+    image: Filip_iwanowicz,
+    title: 'Filip Iwanowicz',
+  },
+  {
+    image: Julian_orlowski,
+    title: 'Julian Orłowski',
+  },
+  {
+    image: Lukasz_rutkowski,
+    title: 'Lukasz Rutkowski',
+  },
+  {
+    image: Adrian_joc,
+    title: 'Adrian Joć',
+  },
+];
+
+
 
 const Podopieczni = ({card}) => {
   return (
@@ -21,34 +60,15 @@ const Podopieczni = ({card}) => {
       </ContainerStyled>
       <ContainerStyled small>
         <CardsContainer>
-          <Card as="a" href="https://facebook.pl"
-            title="Aleksander Kwiatek"
-            image={C1}
+          {Data.map((value, index) => (
+          <Card
+            key={index}
+            title={value.title}
+            image={value.image}
             cover
           >
-           Sed porttitor lectus nibh lohda. Donec sollicitudin molestie malesuada.
           </Card>
-          <Card as="a" href="https://facebook.pl"
-            title="Aleksander Kwiatek"
-            image={C1}
-            cover
-          >
-           Sed porttitor lectus nibh lohda. Donec sollicitudin molestie malesuada.
-          </Card>
-          <Card as="a" href="https://facebook.pl"
-            title="Aleksander Kwiatek"
-            image={C1}
-            cover
-          >
-           Sed porttitor lectus nibh lohda. Donec sollicitudin molestie malesuada.
-          </Card>
-          <Card as="a" href="https://facebook.pl"
-            title="Aleksander Kwiatek"
-            image={C1}
-            cover
-          >
-           Sed porttitor lectus nibh lohda. Donec sollicitudin molestie malesuada.
-          </Card>
+          ))}
         </CardsContainer>
       </ContainerStyled>
     </PodopieczniStyled>

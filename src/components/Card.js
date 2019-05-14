@@ -29,7 +29,7 @@ const CardImage = styled.img`
     height: 300px;
     width: 100%;
     object-fit: ${props => props.cover ? 'cover':'contain'};
-    object-position: ${props => props.cover ? '0 -40px':'0'} ;
+    object-position:${props => props.cover ? 'center':'left'};  ;
 `
 
 const CardTitle = styled.h3`

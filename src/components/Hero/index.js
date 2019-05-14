@@ -15,11 +15,9 @@ import HeroImg2 from '../../images/bg-2.jpg'
 import HeroImg3 from '../../images/hero-3.jpg'
 import SlideFooter from '../../blocks/SlideFooter';
 
-import Slider11 from '../../images/slider-e-1.jpg';
-import Slider12 from '../../images/slider-1-2.jpg';
-import Slider13 from '../../images/slider-1-3.jpg';
-import Slider14 from '../../images/slider-e-4.jpg';
-import Slider15 from '../../images/slider-e-5.jpg';
+import Slider11 from '../../images/Slider/Slider-1.jpg';
+import Slider12 from '../../images/Slider/Slider-2.jpg';
+import Slider13 from '../../images/Slider/Slider-3.jpg';
 
 import Slider21 from '../../images/slider-2-1.jpg';
 import Slider22 from '../../images/slider-2-2.jpg';
@@ -36,9 +34,9 @@ import Slider35 from '../../images/slider-e-7.jpg';
 const SliderImages = [HeroImg, HeroImg2, HeroImg];
 
 const SmallSlider = [
-  [Slider11, Slider12, Slider13, Slider14, Slider15],
-  [Slider21, Slider22, Slider23, Slider24, Slider25],
-  [Slider31, Slider32, Slider33, Slider34, Slider35],
+  [Slider11, Slider12, Slider13],
+  [Slider11, Slider12, Slider13],
+  [Slider11, Slider12, Slider13],
 ]
 
 const SliderContent = [
@@ -74,14 +72,18 @@ export default class Hero extends Component {
     }
 
     componentDidMount() {
-      this.setState({
-        slide: 0,
-      });
+      setInterval(() => {
+        console.log('Big test data');
+        this.nextSlide();
+      }, 5000);
     }
 
     nextSlide() {
+      console.log('next slide');
       let slide = this.state.slide;
       slide++;
+
+      // setInterval(this.nextSlide(), 1000);
 
       this.setState({
         slide : slide > this.state.length - 1 ? 0 : slide

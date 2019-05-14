@@ -8,7 +8,7 @@ import { ContainerStyled } from "../components/Container.styled"
 
 import Header from './sectionHeader'
 
-import C1 from '../images/mct.png';
+import C1 from '../images/facebook.png';
 
 const Wiedza = () => {
   return (
