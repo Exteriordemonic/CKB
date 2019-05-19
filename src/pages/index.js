@@ -14,6 +14,8 @@ import Wiedza from "../components/Wiedza"
 import Sala from "../components/Sala"
 import Podopieczni from "../components/Podopieczni"
 
+import { Preloader, Placeholder } from 'react-preloading-screen';
+
 import HeroImage from '../images/ckb.jpg'
 
 import G1 from '../images/g-1.jpg'
@@ -49,21 +51,26 @@ class IndexPage extends Component {
 
   render() {
     return(
-      <Layout>
-        <SEO title="Strona główna" keywords={[`Przygotowanie motoryczne`, `mazury`, `mragowo`, 'treningi']} />
-        <Hero />
-        <SkewBackground>
-          <About />
-          <PoziomCardSection selectCard={this.selectCardHandle} card={this.state.card} />
-          <Poziom card={this.state.card} />
-        </SkewBackground>
-        <ImagesGrid images={Images}/>
-        <Wiedza />
-        <SkewBackground>
-        <Sala background={SalaImg} />
-          <Podopieczni />
-        </SkewBackground>
-      </Layout>
+      <Preloader>
+        <Layout>
+          <SEO title="Strona główna" keywords={[`Przygotowanie motoryczne`, `mazury`, `mragowo`, 'treningi']} />
+          <Hero />
+          <SkewBackground>
+            <About />
+            <PoziomCardSection selectCard={this.selectCardHandle} card={this.state.card} />
+            <Poziom card={this.state.card} />
+          </SkewBackground>
+          <ImagesGrid images={Images}/>
+          <Wiedza />
+          <SkewBackground>
+          <Sala background={SalaImg} />
+            <Podopieczni />
+          </SkewBackground>
+        </Layout>
+        <Placeholder>
+            <span>Loading...</span>
+        </Placeholder>
+    </Preloader>
     )
   }
 }

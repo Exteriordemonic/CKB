@@ -19,6 +19,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-preloading-screen": "^1.0.2",
     "react-transition-group": "^4.0.0",
     "save-dev": "^2.0.0",
     "styled-components": "^4.2.0"
