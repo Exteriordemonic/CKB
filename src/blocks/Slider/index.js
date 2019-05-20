@@ -17,6 +17,13 @@ export default class Slide extends Component {
     this.changeSlide = this.changeSlide.bind(this);
 
   }
+
+  componentDidMount() {
+    setInterval(()=> {
+      console.log('TEST 2');
+      this.nextSlide();
+    }, 2000)
+  }
   
   static propTypes = {
     data: PropTypes.any
@@ -49,7 +56,7 @@ export default class Slide extends Component {
             <Slider.Image src={this.props.data[this.state.current]} />
           </CSSTransition>
         </TransitionGroup>
-        <Slider.Navigation>
+        {/* <Slider.Navigation>
           {this.props.data.map((elem, index) => {
             return(
               <Slider.Element key={index}>
@@ -61,7 +68,7 @@ export default class Slide extends Component {
               </Slider.Element>
             )
           })}
-        </Slider.Navigation>
+        </Slider.Navigation> */}
       </Slider>
     )
   }

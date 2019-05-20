@@ -16,9 +16,11 @@ import HeroImg3 from '../../images/hero.jpg'
 
 import SlideFooter from '../../blocks/SlideFooter';
 
-import Slider11 from '../../images/ckb-8.jpg';
-import Slider12 from '../../images/ckb-14.jpg';
-import Slider13 from '../../images/ckb-19.jpg';
+import Slider1 from '../../images/tgu/1.jpg';
+import Slider2 from '../../images/tgu/2.jpg';
+import Slider3 from '../../images/tgu/3.jpg';
+import Slider4 from '../../images/tgu/4.jpg';
+import Slider5 from '../../images/tgu/5.jpg';
 
 import Slider21 from '../../images/ckb-1.jpg';
 import Slider22 from '../../images/ckb-1.jpg';
@@ -31,9 +33,9 @@ import Slider33 from '../../images/ckb-1.jpg';
 const SliderImages = [HeroImg, HeroImg3, HeroImg2];
 
 const SmallSlider = [
-  [Slider11, Slider12, Slider13 ],
-  [Slider11, Slider12, Slider13 ],
-  [Slider11, Slider12, Slider13 ],
+  [Slider1, Slider2, Slider3, Slider4, Slider5, Slider4, Slider3, Slider2 ],
+  [Slider1, Slider2, Slider3, Slider4, Slider5, Slider4, Slider3, Slider2 ],
+  [Slider1, Slider2, Slider3, Slider4, Slider5, Slider4, Slider3, Slider2 ],
 ]
 
 const SliderContent = [
@@ -69,6 +71,12 @@ export default class Hero extends Component {
     }
 
     componentDidMount() {
+
+      setInterval(()=> {
+        console.log('TEST');
+        this.nextSlide();
+      }, 5000)
+
       this.setState({
         slide: 0,
       });

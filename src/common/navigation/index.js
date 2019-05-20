@@ -23,9 +23,9 @@ class Navigation extends Component {
     super(props)
     
     this.state = {
-      showNavigation: false,
+      showNavigation: true,
       showDropdown: false,
-      showSuperNav: false,
+      showSuperNav: true,
     }
   
     this.toggleNavbar = this.toggleNavbar.bind(this);
@@ -61,7 +61,7 @@ class Navigation extends Component {
             </Link>
           </Header.Brand>
           <Header.Hamburger activ={this.state.showSuperNav} onClick={this.toggleSuperNav}/>
-          <SuperNav activ={this.state.showSuperNav} />
+          <SuperNav activ={this.state.showSuperNav} clickHandler={this.toggleSuperNav}/>
         </nav>
       </Header>
     )

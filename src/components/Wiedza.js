@@ -8,7 +8,7 @@ import { ContainerStyled } from "../components/Container.styled"
 
 import Header from './sectionHeader'
 
-import C1 from '../images/mct.png';
+import C1 from '../images/logo.png';
 
 const Wiedza = () => {
   return (
@@ -18,7 +18,7 @@ const Wiedza = () => {
       </ContainerStyled>
       <ContainerStyled small>
         <CardsContainer>
-          <Card as="a" href="https://facebook.pl"
+          <Card as="a" href="https://www.facebook.com/CKBMragowo/"
             title="Facebook"
             image={C1}
           >

@@ -9,6 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import { Preloader, Placeholder } from 'react-preloading-screen';
+
 import Header from '../common/navigation'
 import Footer from '../common/Footer'
 
@@ -26,11 +28,14 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <Preloader>
         <Header />
         <main>{children}</main>
         <Footer />
-      </>
+        <Placeholder>
+            <span>Ładowanie...</span>
+        </Placeholder>
+      </Preloader>
     )}
   />
 )

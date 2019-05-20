@@ -10,6 +10,8 @@ export const ContainerStyled = styled.div`
     }
 
     @media (max-width: 768px) {
-        padding: ${props => props.small ? '0 50px' : '0 50px'};
+        padding: ${props => props.small ? '0 15px' : '0 15px'};
+        margin: 0 0 100px;
+        border-radius: 0;
     }
 `

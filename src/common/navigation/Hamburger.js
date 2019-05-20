@@ -12,7 +12,7 @@ const Hamburger = styled.div`
   width: 50px;
   height: 50px;
   z-index: 100;
-  display: none;
+  display: block;
 
   &::before,
   &::after {

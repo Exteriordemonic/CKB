@@ -32,15 +32,16 @@ const ImagesGridStyled = styled.div`
   grid-template-areas:
     "a b b c"
     "a d e e"
-    "f f g h";
+    "f g h i";
 
   @media (max-width: 1024px) {
     grid-template-areas:
-      "a b"
-      "c b"
-      "d d"
-      "e f"
+      "a i"
+      "b b"
+      "c d"
+      "e e"
       "g h"
+      "f f"
   }
 `
 
@@ -85,6 +86,10 @@ const ImagesGridElement = styled.img`
 
   :nth-of-type(8) {
     grid-area: h;
+  }
+
+  :nth-of-type(9) {
+    grid-area: i;
   }
 `
 

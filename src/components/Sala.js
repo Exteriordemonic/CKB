@@ -47,7 +47,7 @@ const Sala = ({ background }) => {
 
           {/* <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled> */}
         </SalaInfo>
-        {/* <SalaIcons>
+        <SalaIcons>
           <SalaIconElement>
             <i>{kettleBellIcon}</i>8 x 8kg
           </SalaIconElement>
@@ -55,7 +55,7 @@ const Sala = ({ background }) => {
             <i>{kettleBellIcon}</i>8 x 10kg
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>8 x 12kg
+            <i>{kettleBellIcon}</i>8 x 16kg
           </SalaIconElement>
           <SalaIconElement>
             <i>{kettleBellIcon}</i>8 x 20kg
@@ -64,12 +64,15 @@ const Sala = ({ background }) => {
             <i>{kettleBellIcon}</i>8 x 24kg
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>8 x 32kg
+            <i>{kettleBellIcon}</i>3 x 32kg
           </SalaIconElement>
           <SalaIconElement>
             <i>{benchPressIcon}</i>max 200kg
           </SalaIconElement>
-        </SalaIcons> */}
+          <SalaIconElement>
+            <i>{kettleBellIcon}</i>1 x 40kg
+          </SalaIconElement>
+        </SalaIcons>
       </SalaBackground>
     </SalaContainer>
   )
@@ -82,8 +85,7 @@ const SalaContainer = styled(ContainerStyled)`
   position: relative;
   margin: 100px;
   border-radius: 20px;
-  overflow: hidden;
-  
+  overflow: hidden;  
 `
 
 const SalaBackground = styled.div`

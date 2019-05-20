@@ -8,17 +8,17 @@ import kolonia from '../../images/kolonia.jpg'
 const Data = [
   {
     image: ckb,
-    link: '#ckb',
+    link: '#',
     title: 'CKB'
   },
   {
     image: mct,
-    link: '#mct',
+    link: 'http://mct-mragowo.pl/',
     title: 'MCT'
   },
   {
     image: kolonia,
-    link: '#półkolonie',
+    link: 'http://polkolonie-mazury.pl/',
     title: 'Półkolonie'
   },
 ]
@@ -85,7 +85,7 @@ const SuperNav = props => (
       // Return the element. Also pass key     
       return (<Item key={i}>
         <Link href={elem.link}>
-          <Image src={elem.image} alt={elem.title}/>
+          <Image src={elem.image} onClick={props.clickHandler} alt={elem.title}/>
           <Title> {elem.title} </Title>
         </Link>
       </Item>) 
