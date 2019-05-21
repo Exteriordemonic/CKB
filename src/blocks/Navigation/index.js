@@ -17,6 +17,12 @@ const Nav = () => (
       <Navigation.Item className="subtitle">
         Zdrowie
       </Navigation.Item>
+      <Navigation.Item className="subtitle">
+        Sylwetka
+      </Navigation.Item>
+      <Navigation.Item className="subtitle">
+        Energia
+      </Navigation.Item>
     </Navigation.List>
   </Navigation>
 )

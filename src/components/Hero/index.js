@@ -30,7 +30,7 @@ import Slider31 from '../../images/ckb-1.jpg';
 import Slider32 from '../../images/ckb-1.jpg';
 import Slider33 from '../../images/ckb-1.jpg';
 
-const SliderImages = [HeroImg, HeroImg3, HeroImg2];
+const SliderImages = [HeroImg, HeroImg2, HeroImg3];
 
 const SmallSlider = [
   [Slider1, Slider2, Slider3, Slider4, Slider5, Slider4, Slider3, Slider2 ],
@@ -45,13 +45,13 @@ const SliderContent = [
     {title: 'Kiedy', text: 'WT-CZW'},
   ],
   [ 
-    {title: 'Poziom', text: 'Activ'},
+    {title: 'Poziom', text: 'Active'},
     {title: 'Cena', text: '120zł/msc'},
-    {title: 'Kiedy', text: 'PN-SR-PT'},
+    {title: 'Kiedy', text: 'WT-CZW'},
   ],
   [ 
-    {title: 'Poziom', text: 'Advenced'},
-    {title: 'Cena', text: '120zł/msc'},
+    {title: 'Poziom', text: 'Advanced'},
+    {title: 'Cena', text: '160zł/msc'},
     {title: 'Kiedy', text: 'PN-SR-PT'},
   ],
 ]
@@ -115,7 +115,7 @@ export default class Hero extends Component {
         </CSSTransition>
         </TransitionGroup>
         <HeroWrapper.Title as="span" className="headline">
-          HARD STYLE
+          HARDSTYLE
         </HeroWrapper.Title>
         <Navigation />
         

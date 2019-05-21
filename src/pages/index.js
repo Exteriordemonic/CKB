@@ -26,7 +26,7 @@ import G7 from '../images/gallery/7.jpg'
 import G8 from '../images/gallery/8.jpg'
 import G9 from '../images/gallery/9.jpg'
 
-import SalaImg from '../images/tgu/4.jpg'
+import SalaImg from '../images/hero.jpg'
 
 const Images = [G7, G9,G5, G4, G8,G2, G1, G6, G3]
 

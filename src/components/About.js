@@ -15,7 +15,7 @@ const About = props => {
     <ContainerStyled>
       <AboutStyled>
         <AboutInfo>
-          <TitleStyled className="subtitle bold" minor>CKB</TitleStyled>
+          <TitleStyled className="subtitle bold" minor> </TitleStyled>
           <AboutTitle className="title bold">Centrum Ketllebell Mrągowo</AboutTitle>
           <AboutText className="text">
             Pierwszy w Mrągowie i powiecie klub prowadzący zajęcia Hardstyle Kettlebell wg. Pavla Tsatsoulina przez Certyfikowanego Instruktora Strong First SFG1

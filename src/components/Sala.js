@@ -49,28 +49,43 @@ const Sala = ({ background }) => {
         </SalaInfo>
         <SalaIcons>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>8 x 8kg
+            <i>{kettleBellIcon}</i>5kg x 4
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>8 x 10kg
+            <i>{kettleBellIcon}</i>8kg x 14
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>8 x 16kg
+            <i>{kettleBellIcon}</i>10kg x 4
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>8 x 20kg
+            <i>{kettleBellIcon}</i>12kg x 14
           </SalaIconElement>
           <SalaIconElement>
             <i>{kettleBellIcon}</i>8 x 24kg
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>3 x 32kg
+            <i>{kettleBellIcon}</i>16kg x 8
           </SalaIconElement>
           <SalaIconElement>
-            <i>{benchPressIcon}</i>max 200kg
+            <i>{kettleBellIcon}</i>20kg x  6
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>1 x 40kg
+            <i>{kettleBellIcon}</i>24kg  x  6
+          </SalaIconElement>
+          <SalaIconElement>
+            <i>{kettleBellIcon}</i>28kg x 2
+          </SalaIconElement>
+          <SalaIconElement>
+            <i>{kettleBellIcon}</i>32kg x 2
+          </SalaIconElement>
+          <SalaIconElement>
+            <i>{kettleBellIcon}</i>36kg x 2
+          </SalaIconElement>
+          <SalaIconElement>
+            <i>{kettleBellIcon}</i>40kg
+          </SalaIconElement>
+          <SalaIconElement>
+            <i>{kettleBellIcon}</i>48kg
           </SalaIconElement>
         </SalaIcons>
       </SalaBackground>
@@ -91,9 +106,9 @@ const SalaContainer = styled(ContainerStyled)`
 const SalaBackground = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  padding: 60px 0;
+  grid-template-columns: 2fr 1.5fr;
+  grid-gap: 10px;
+  padding: 30px 0;
   box-sizing: border-box;
   position: relative;
 
@@ -134,12 +149,12 @@ const SalaIcons = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
-  font-size: 27px;
-  grid-gap: 40px;
+  font-size: 16px;
+  grid-gap: 20px;
 
   svg {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     fill: white;
     margin-right: 20px;
   }

@@ -16,7 +16,7 @@ const Data = [
     content: 'Trening indywidualny w formule 1x1 z trenerem, w ramach którego znajduje się: ocena funkcjonalna według testu MCS1, indywidualnie dobrany plan treningowy, kontrola postępów, baza danych z wynikami, maksymalna efektywność pracy, bezpośrednia motywacja i wsparcie trenera.'
   },
   {
-    title: 'Activ',
+    title: 'Active',
     content: 'Treningi grupowe od 10 do 15 zawodników, w których znajduje się: ocena funkcjonalna według testu MCS1, testy motoryczne przed i po określonym okresie współpracy, grupowy plan treningowy ukierunkowany na najsłabsze punkty i kluczowe aspekty dyscypliny, baza danych z wynikami testów dla rodziców i trenerów.'
   },
   {
