@@ -1,5 +1,7 @@
 import React, {Component} from "react"
 
+import cookie from 'react-cookies'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -39,6 +41,10 @@ class IndexPage extends Component {
     this.selectCardHandle = this.selectCardHandle.bind(this); 
   }
 
+  componentWillMount() {
+    this.state =  { supernav: cookie.load('supernav') == 'false' ? false : true }
+  }
+
   selectCardHandle(e) {
     let index = e.currentTarget.dataset.index;
   console.log(index); 
@@ -50,7 +56,7 @@ class IndexPage extends Component {
 
   render() {
     return(
-      <Layout>
+      <Layout supernav={this.state.supernav}>
         <SEO title="Strona główna" keywords={[`strongfirst polska`, `strongfirst program`, `Trening`, `sylwetka`, `siła`, `StrongFirst`, `kettlebells`, `kettlebell olsztyn`, `kettlebell mragowo`, `kettlebell swing`, `kettlebell hardstyle`, `	kettlebell ckb`]} />
         <Hero />
         <SkewBackground>

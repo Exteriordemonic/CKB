@@ -2,6 +2,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import cookie from 'react-cookies'
+
 import { Link } from "gatsby"
 
 // import components
@@ -23,9 +25,7 @@ class Navigation extends Component {
     super(props)
     
     this.state = {
-      showNavigation: true,
-      showDropdown: false,
-      showSuperNav: true,
+      showSuperNav: this.props.supernav,
     }
   
     this.toggleNavbar = this.toggleNavbar.bind(this);
@@ -46,6 +46,12 @@ class Navigation extends Component {
   }
 
   toggleSuperNav(){
+    const expires = new Date();
+    expires.setDate(Date.now() + 1000 * 60 * 60 * 24 * 5);
+
+    cookie.save('supernav', 'false', { path: '/', expires, maxAge: 1000});
+
+
     this.setState({
       showSuperNav: !this.state.showSuperNav,
     })
@@ -58,6 +64,7 @@ class Navigation extends Component {
           <Header.Brand>
             <Link to="/" className="navbar-brand">
               <Header.Logo src={logo} alt="CKB Mrągowo Treningi Ketllebell"/>
+              {this.props.supernav}
             </Link>
           </Header.Brand>
           <Header.Hamburger activ={this.state.showSuperNav} onClick={this.toggleSuperNav}/>

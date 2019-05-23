@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 
 import Navigation from './Navigation'
 
@@ -6,7 +7,7 @@ const Nav = () => (
   <Navigation>
     <Navigation.List>
       <Navigation.Item className="subtitle">
-        Siła
+        <Link to="/sila">Siła</Link>
       </Navigation.Item>
       <Navigation.Item className="subtitle">
         Wytrzymałość

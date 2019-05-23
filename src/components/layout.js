@@ -9,14 +9,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import cookie from 'react-cookies'
+
 import { Preloader, Placeholder } from 'react-preloading-screen';
 
 import Header from '../common/navigation'
 import Footer from '../common/Footer'
 
-import "./layout.css"
+import '../styles/styles.scss'
 
-const Layout = ({ children }) => (
+const Layout = ({ supernav, children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -29,7 +31,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <Preloader>
-        <Header />
+        <Header supernav={supernav}/>
         <main>{children}</main>
         <Footer />
         <Placeholder>

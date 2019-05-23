@@ -86,7 +86,6 @@ const SuperNav = props => (
       return (<Item key={i}>
         <Link href={elem.link}>
           <Image src={elem.image} onClick={props.clickHandler} alt={elem.title}/>
-          <Title> {elem.title} </Title>
         </Link>
       </Item>) 
     })}
