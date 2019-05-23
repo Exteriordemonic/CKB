@@ -1,5 +1,6 @@
 .hero {
   height: 60vh;
+  position: relative;
 
   &__img {
     width: 100%;
@@ -12,5 +13,20 @@
     top: 140px;
     padding-left: 100px;
     color: black;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    padding-left: 100px;
+    color: black;
+    background-color: $special;
+    padding: 50px;
+    font-weight: 900;
+    
+    &:hover {
+      opacity: 1;
+      background-color: lighten( $special, 10% );
+    }
   }
 }

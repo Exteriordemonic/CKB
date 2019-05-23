@@ -1,17 +1,27 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-export default class componentName extends Component {
+import { ContainerStyled } from "./Container.styled"
+
+export default class Content extends Component {
   static propTypes = {
     prop: PropTypes
   }
 
   render() {
     return (
-      <section className="Content">
-        <div className="column-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi exercitationem animi eligendi, numquam cumque reiciendis consectetur sapiente non possimus labore nisi nam voluptates, aliquid earum voluptatem laborum. Praesentium, neque!
-        </div>
+      <section className="content">
+        <ContainerStyled>
+          <div className="content__wrapper">
+            <div className="content__col">
+              {this.props.children}
+            </div>
+            <div className="content__col">
+              <img className="content__img" src={this.props.img1} />
+              <img className="content__img content__img--2" src={this.props.img2} />
+            </div>
+          </div>
+        </ContainerStyled>
       </section>
     )
   }
