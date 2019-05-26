@@ -10,16 +10,16 @@ const Nav = () => (
         <Link to="/sila">Siła</Link>
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        Wytrzymałość
+        <Link to="/wytrzymalosc">WYTRZYMAŁOŚĆ</Link>
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        Mobilność
+        <Link to="/mobilnosc">Mobilność</Link>
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        Zdrowie
+        <Link to="/zdrowie">Zdrowie</Link>
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        Sylwetka
+      <Link to="/sylwetka">Sylwetka</Link>
       </Navigation.Item>
       <Navigation.Item className="subtitle">
         Energia

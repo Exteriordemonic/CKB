@@ -14,7 +14,7 @@ export default class SmallHero extends Component {
 
   render() {
     return (
-      <section className="hero">
+      <section className={`hero ${this.props.reverse ? `hero--reverse` : ''}`}>
         <img src={this.props.img} alt="" className="hero__img" />
         <h1 className="hero__title headline">
           {this.props.title}

@@ -1,4 +1,5 @@
 .hero {
+  $root : &;
   height: 60vh;
   position: relative;
 
@@ -35,6 +36,12 @@
     &:hover {
       opacity: 1;
       background-color: lighten( $special, 10% );
+    }
+  }
+
+  &--reverse {
+    #{$root}__title {
+      color: white;
     }
   }
 }
