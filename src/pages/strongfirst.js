@@ -7,13 +7,13 @@ import Content from '../components/content'
 import img1 from '../images/tgu/3.jpg' 
 import img2 from '../images/tgu/5.jpg' 
 
-import image from '../images/pages/sylwetka.jpg' 
+import image from '../images/pages/strongfirst.jpg' 
 
 class Strongfirst extends Component {
   render() {
     return(
       <Layout supernav={false}>
-        <SmallHero title="Strongfirst" img={image} reverse/>
+        <SmallHero title="Strongfirst" img={image} reverse />
         <Content img1={img1} img2={img2} >
           <h2>Czym jest StrongFirst</h2>
           <p className="text">

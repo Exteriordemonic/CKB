@@ -35,15 +35,18 @@ const Sala = ({ background }) => {
         <SalaInfo>
           <Header title="Nasza" subtitle="Sala treningowa" isInverted/>
           <SalaText className="text" inverted>
-          - 200 m2 <br />
-          - dwie sale treningowe, szatnie, toaleta, recepcja <br />
+          CKB Mrągowo mieście się w sali przy ul. Lubleskie 44. Do dyspozycji studentów jest lokal o piwerzchni blisko 200 m2, w nim dwie sale treningowe po 60 m każda, recepcja oraz poczekalnia z wygodną kanapą, toaleta i dwie szatnie
+          <br/>
+          <br/>
           - Odważniki serii CKB PRO i Girya Fitness w zakresie od 4 kg do 48 kg <br />
           - Sztangi i obciążenie do 200 kg <br />
-          - Sprzęt do kształtowania koordynacji <br />
-          - BOSU, TRX, berety stabilizacyjne, power bands, mini bands, rollery
+          - Obciążenie gumowe do 180 kg <br />
+          - Poręcze przenośne do dipów <br />
+          - Drążki ścienne <br />
+          - Koła gimnastyczne i TRX <br />
+          - Sprzęt do treningu motorycznego i funkcjonalnego
 
           </SalaText>
-          <SalaText  as="p" className="text" inverted>Fotokomórki <span className="special">TEST YOU</span> do testów sprawnościowych</SalaText>
 
           {/* <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled> */}
         </SalaInfo>
