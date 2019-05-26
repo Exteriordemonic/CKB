@@ -6,7 +6,7 @@ import Button from './Button.js'
 
 const Navigation = styled.ul`
   position: absolute;
-  bottom: ${Gutter * 10}px;
+  bottom: ${Gutter * 5}px;
   left: ${Gutter * 10}px;
   list-style: none;
   display: flex;

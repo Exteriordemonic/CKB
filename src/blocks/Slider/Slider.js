@@ -18,6 +18,7 @@ const Slider = styled(Ul)`
   @media (max-width: 1024px) {
     width: calc(100vw - ${Gutter * 20}px);
     padding-top: 60%;
+    display: none;
   }
 `
 
