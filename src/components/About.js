@@ -18,9 +18,10 @@ const About = props => {
           <TitleStyled className="subtitle bold" minor> </TitleStyled>
           <AboutTitle className="title bold">Centrum Ketllebell Mrągowo</AboutTitle>
           <AboutText className="text">
-            Pierwszy w Mrągowie i powiecie klub prowadzący zajęcia Hardstyle Kettlebell wg. Pavla Tsatsoulina przez Certyfikowanego Instruktora Strong First SFG1
+          CKB Mrągowo to pierwszy w Mrągowie i powiecie klub prowadzący zajęcia Hardstyle Kettlebell wg. systemu StrongFirst przez Certyfikowanego Instruktora StrongFirst SFG1. Jesteśmy jedyną szkołą siły w promieniu 50 km praktykującą trening z odważnikami kulowymi według Pavla Tsatsoulina twórcy i założyciela StrongFirst. Tu poznasz magię i świat odważników kulowych które potrafią odmienić życie każdego w zamian za wytrwałą i systematyczną pracę na zajęciach. Zostań studentem siły i dołącz do CKB Mrągowo
+
           </AboutText>
-          <LinkStyled className="subtitle bold" as="a" href="tel:+48508378847" >Zadzwoń: +48 508 378 847</LinkStyled>
+          <LinkStyled className="subtitle bold" to="/strongfirst" >Czym jest StrongFirst?</LinkStyled>
         </AboutInfo>
         <AboutImages>
           <AboutImage1 src={CKB} />
