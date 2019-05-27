@@ -25,6 +25,10 @@
     transition: 0.4s;
     max-height: 400px;
 
+    img {
+      object-fit: contain !important;
+    }
+
 
     &--2 {
       opacity: 0;

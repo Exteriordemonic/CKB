@@ -1,19 +1,24 @@
 import React, { Component } from "react"
+import { graphql } from "gatsby"
 
+import Header from '../common/navigation'
 import Layout from "../components/layout"
 import SmallHero from '../components/smallHero'
 import Content from '../components/content'
 
-import img1 from '../images/pages/silacze.jpg'
-
-import image from '../images/pages/strongfirst.jpg'
-
 class Strongfirst extends Component {
   render() {
+    const ckb = this.props.data.ckb.childImageSharp.fixed;
+    const mct = this.props.data.mct.childImageSharp.fixed;
+    const kolonia = this.props.data.kolonia.childImageSharp.fixed;
+    const imageOne = this.props.data.imageOne.childImageSharp.fixed;
+    const imageTwo = this.props.data.imageTwo.childImageSharp.fixed;
+
     return (
       <Layout supernav={false}>
-        <SmallHero title="Strongfirst" img={image} reverse />
-        <Content img1={img1} img2={img1} >
+        <Header supernav={false} img={[ckb, mct, kolonia]}  />
+        <SmallHero title="Strongfirst" img={imageOne}  reverse />
+        <Content img={imageTwo}>
           <h2>Czym jest StrongFirst</h2>
           <p className="text">
             Jest to system opracowany przez Pavla Tsatsouline’a trenera, który szkolił rosyjskie siły specjalne (SPECNAZ). W latach 90-tych wyemigrował do USA, gdzie rozpropagował trening z odważnikami kulowymi według własnej metody Hardstyle Kettlebell, będącej podstawą systemu i filozofii STRONG FIRST. Pavel bardzo szybko zyskał duży rozgłos za oceanem, a następnie na całym świecie. Wydał tam swoje pierwsze książki, które do dziś są obowiązkową pozycją zagadnień treningu siłowego: “Nagi Wojownik” “Siła dla Ludu” “Wielkie wejście odważników kulowych”. Prestiżowy magazyn Rolling Stone uznał go w tamtym czasie trenerem roku. Od 2010 roku metody Pavla można poznać podczas kursów instruktorskich w Polsce, gdyż w tym roku Dariusz Waluś został wybrany na oficjalnego przedstawiciela Strong First w Naszym kraju. Obecnie mamy w Polsce ponad setkę instruktorów Strong First, którzy reprezentują i przekazują swoim Studentom filozofię SF, opierającą się na kilku głównych filarach:
@@ -51,6 +56,71 @@ class Strongfirst extends Component {
     )
   }
 }
+
+export const query = graphql`
+query {
+  ckb: file(relativePath: {eq: "ckb.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  mct: file(relativePath: {eq: "mct.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  kolonia: file(relativePath: {eq: "kolonia.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  imageOne: file(relativePath: {eq: "pages/strongfirst.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  imageTwo: file(relativePath: {eq: "pages/silacze.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  }
+}
+`
 
 
 export default Strongfirst
