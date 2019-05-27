@@ -70,7 +70,7 @@ query {
       }
     }
   },
-  imageOne: file(relativePath: {eq: "pages/strong.jpg"}) {
+  imageOne: file(relativePath: {eq: "pages/wytrzymalosc.jpg"}) {
     childImageSharp {
       fixed(width: 1920) {
         base64

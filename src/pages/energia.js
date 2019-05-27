@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SmallHero from '../components/smallHero'
 import Content from '../components/content'
 
-class Mobilnosc extends Component {
+class Energia extends Component {
   render() {
     const ckb = this.props.data.ckb.childImageSharp.fixed;
     const mct = this.props.data.mct.childImageSharp.fixed;
@@ -16,15 +16,12 @@ class Mobilnosc extends Component {
 
     return (
       <Layout supernav={false}>
-        <Header supernav={false} img={[ckb, mct, kolonia]} />
-        <SmallHero title="MOBILNOŚĆ" img={imageOne} reverse />
+        <Header supernav={false} img={[ckb, mct, kolonia]}/>
+        <SmallHero title="Energia" img={imageOne} />
         <Content img={imageTwo}>
-          <h2>MOBILNOŚĆ i ZDROWE STAWY</h2>
+          <h2>Energia</h2>
           <p className="text">
-            Podczas każdych zajęć Studenci poznają elementy mobility skupiające się na wybranych stawach lub angażujących całe ciało, są one nieodłącznym elementem każdej rozgrzewki. Wykorzystujemy w tym celu techniki z odważnikiem (tj. Halo,Arm Bar, Goblet Squat, TGU) lub tyczką, jednak znaczną część czasu pracujemy z masą własnego ciała.
-          </p>
-          <p className="text">
-            W ten sposób systematycznie i świadomie dbamy o zdrowie stawów i całego aparatu ruchu, pamiętając o tym że człowiek został stworzony do tego aby się ruszać.
+            Poznaj moc treningu z odważnikami kulowymi, każda sesja to ogromna dawka pozytywnej energii i wzrost poziomu endorfin. Hardstyle Kettlebell odmieni Twoje podejście do kwestii treningu i pokaże czym jest prawdziwa Siła i Energia.
           </p>
         </Content>
       </Layout>
@@ -70,7 +67,7 @@ query {
       }
     }
   },
-  imageOne: file(relativePath: {eq: "pages/mobilnosc.jpg"}) {
+  imageOne: file(relativePath: {eq: "pages/energia.jpg"}) {
     childImageSharp {
       fixed(width: 1920) {
         base64
@@ -98,4 +95,4 @@ query {
 `
 
 
-export default Mobilnosc
+export default Energia

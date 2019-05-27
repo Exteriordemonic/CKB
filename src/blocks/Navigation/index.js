@@ -19,10 +19,10 @@ const Nav = () => (
         <Link to="/zdrowie">Zdrowie</Link>
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-      <Link to="/sylwetka">Sylwetka</Link>
+        <Link to="/sylwetka">Sylwetka</Link>
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        Energia
+        <Link to="/energia">Energia</Link>
       </Navigation.Item>
     </Navigation.List>
   </Navigation>
