@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import Img from "gatsby-image"
+
 import { ContainerStyled } from "./Container.styled"
 
 export default class Content extends Component {
@@ -17,8 +19,7 @@ export default class Content extends Component {
               {this.props.children}
             </div>
             <div className="content__col">
-              <img className="content__img" src={this.props.img1} />
-              <img className="content__img content__img--2" src={this.props.img2} />
+              <Img fixed={this.props.img} className="content__img" />
             </div>
           </div>
         </ContainerStyled>

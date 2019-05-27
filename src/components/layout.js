@@ -18,7 +18,7 @@ import Footer from '../common/Footer'
 
 import '../styles/styles.scss'
 
-const Layout = ({ supernav, children }) => (
+const Layout = ({ supernav, children, data }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,7 +31,6 @@ const Layout = ({ supernav, children }) => (
     `}
     render={data => (
       <Preloader>
-        <Header supernav={supernav}/>
         <main>{children}</main>
         <Footer />
         <Placeholder>
@@ -45,5 +44,49 @@ const Layout = ({ supernav, children }) => (
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+export const query = graphql`
+query {
+  ckb: file(relativePath: {eq: "ckb.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  mct: file(relativePath: {eq: "mct.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  kolonia: file(relativePath: {eq: "kolonie.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        tracedSVG
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  }
+}
+`;
 
 export default Layout

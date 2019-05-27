@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // import components
+import Header from '../common/navigation'
 import Hero from "../components/Hero"
 import SkewBackground from "../components/SkewBackground"
 import About from "../components/About"
@@ -55,9 +56,14 @@ class IndexPage extends Component {
   }
 
   render() {
+    const ckb = this.props.data.ckb.childImageSharp.fixed;
+    const mct = this.props.data.mct.childImageSharp.fixed;
+    const kolonia = this.props.data.kolonia.childImageSharp.fixed;
+
     return (
       <Layout supernav={this.state.supernav}>
         <SEO title="Strona główna" keywords={[`strongfirst polska`, `strongfirst program`, `Trening`, `sylwetka`, `siła`, `StrongFirst`, `kettlebells`, `kettlebell olsztyn`, `kettlebell mragowo`, `kettlebell swing`, `kettlebell hardstyle`, `	kettlebell ckb`]} />
+        <Header supernav={this.state.supernav} img={[ckb, mct, kolonia]}/>
         <Hero />
         <SkewBackground>
           <About />
@@ -70,6 +76,47 @@ class IndexPage extends Component {
     )
   }
 }
+
+export const query = graphql`
+query {
+  ckb: file(relativePath: {eq: "ckb.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  mct: file(relativePath: {eq: "mct.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  kolonia: file(relativePath: {eq: "kolonia.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  }
+}
+`;
 
 
 export default IndexPage

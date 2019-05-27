@@ -68,7 +68,7 @@ class Navigation extends Component {
             </Link>
           </Header.Brand>
           <Header.Hamburger activ={this.state.showSuperNav} onClick={this.toggleSuperNav}/>
-          <SuperNav activ={this.state.showSuperNav} clickHandler={this.toggleSuperNav}/>
+          <SuperNav activ={this.state.showSuperNav} clickHandler={this.toggleSuperNav} img={this.props.img}/>
         </nav>
       </Header>
     )

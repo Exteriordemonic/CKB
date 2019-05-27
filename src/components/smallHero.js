@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import Img from "gatsby-image"
+
 import { Link } from "gatsby"
 
 export default class SmallHero extends Component {
@@ -15,7 +17,7 @@ export default class SmallHero extends Component {
   render() {
     return (
       <section className={`hero ${this.props.reverse ? `hero--reverse` : ''}`}>
-        <img src={this.props.img} alt="" className="hero__img" />
+        <Img fixed={this.props.img} className="hero__img" />
         <h1 className="hero__title headline">
           {this.props.title}
         </h1>
