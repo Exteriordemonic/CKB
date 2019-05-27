@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
 
 import cookie from 'react-cookies'
 
@@ -30,42 +30,42 @@ import G9 from '../images/gallery/9.jpg'
 
 import SalaImg from '../images/hero.jpg'
 
-const Images = [G7, G9,G5, G4, G8,G2, G1, G6, G3]
+const Images = [G7, G9, G5, G4, G8, G2, G1, G6, G3]
 
 class IndexPage extends Component {
   constructor(props) {
     super(props);
-    this.selectCardHandle = this.selectCardHandle.bind(this); 
+    this.selectCardHandle = this.selectCardHandle.bind(this);
   }
 
   componentWillMount() {
-    this.state =  { 
+    this.state = {
       supernav: cookie.load('supernav') == 'false' ? false : true,
-      card : 1,
+      card: 1,
     }
   }
 
   selectCardHandle(e) {
     let index = e.currentTarget.dataset.index;
-  console.log(index); 
+    console.log(index);
 
     this.setState({
-      card : index
+      card: index
     })
   }
 
   render() {
-    return(
+    return (
       <Layout supernav={this.state.supernav}>
         <SEO title="Strona główna" keywords={[`strongfirst polska`, `strongfirst program`, `Trening`, `sylwetka`, `siła`, `StrongFirst`, `kettlebells`, `kettlebell olsztyn`, `kettlebell mragowo`, `kettlebell swing`, `kettlebell hardstyle`, `	kettlebell ckb`]} />
         <Hero />
         <SkewBackground>
           <About />
-          <PoziomCardSection selectCard={this.selectCardHandle} card={this.state.card}  />
-          {/* <Poziom card={this.state.card} /> */}
+          <PoziomCardSection selectCard={this.selectCardHandle} card={this.state.card} />
+          <Poziom card={this.state.card} />
         </SkewBackground>
         <Sala background={SalaImg} />
-        <ImagesGrid images={Images}/>
+        <ImagesGrid images={Images} />
       </Layout>
     )
   }

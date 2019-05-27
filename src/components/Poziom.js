@@ -13,15 +13,19 @@ import Header from './sectionHeader'
 const Data = [
   {
     title: 'Adept',
-    content: 'Trening indywidualny w formule 1x1 z trenerem, w ramach którego znajduje się: ocena funkcjonalna według testu MCS1, indywidualnie dobrany plan treningowy, kontrola postępów, baza danych z wynikami, maksymalna efektywność pracy, bezpośrednia motywacja i wsparcie trenera.'
+    content: 'Grupa Adept to Twój pierwszy krok w treningu z odważnikami kulowymi, w okresie od 4 do 6 miesięcy poznasz 6 podstawowych technik hardstyle kettlebell według metodyki Strong First, tj. dead lift(martwy ciąg), swing, clean(zarzut), tgu(tureckie wstawanie), goblet squat(przysiad), military press(wyciskanie żołnierskie), snatch(rwanie). Podczas początkowych zajęć możesz spodziewać się dużej ilości ćwiczeń wzmacniających z masą własną ciała, korygujących błędne nawyki i wzorce ruchowe. Nauczysz się prawidłowo oddychać i wytwarzać napięcie mięśniowe, tak byś mógł/mogła bezpiecznie zacząć ćwiczenia z odważnikiem. Priorytetem jest nauka techniki i przygotowanie Cię do bardziej wymagających treningów z dwoma odważnikami.'
   },
   {
     title: 'Active',
-    content: 'Treningi grupowe od 10 do 15 zawodników, w których znajduje się: ocena funkcjonalna według testu MCS1, testy motoryczne przed i po określonym okresie współpracy, grupowy plan treningowy ukierunkowany na najsłabsze punkty i kluczowe aspekty dyscypliny, baza danych z wynikami testów dla rodziców i trenerów.'
+    content: 'Grupa skierowana do osób aktywnych, które przeszły przez pierwszy etap szkolenia i mogą już wykonywać ćwiczenia na dwa odwazniki. Jednocześnie celem tej grupy nie jest osiąganie wyników sportowych, a wykorzystanie kettli do utrzymania dobrej formy, zdrowa i pozytywnej energii w życiu codziennym.'
   },
   {
-    title: 'Duet',
-    content: 'trening w formule 2x1 z trenerem, w którym znajduje się: ocena funkcjonalna według testu MCS1, indywidualnie dobrany plan treningowy, kontrola postępów, baza danych z wynikami, maksymalna efektywność pracy, bezpośrednia motywacja i wsparcie trenera.'
+    title: 'Advanced',
+    content: 'Grupa zaawansowana realizuje cele sportowe z nastawieniem na osiąganie wyników siłowych i starty w zawodach hardstyle kettlebell. Do tej grupy mogą dołączyć studenci po wstępnym okresie szkolenia w grupach Adept i Active.'
+  },
+  {
+    title: 'Personal',
+    content: 'Treningi personalne to zajęcia które są stworzone pod Twoje indywidualne potrzeby. Podczas takiej współpracy trener poświęca Ci całą swoją uwagę, dzięki czemu szybciej uczysz się, rozwijasz swoje umiejętności i osiągasz wspólnie założone cele. Pierwsze spotkanie zaczynamy od dokładnego wywiadu, oceny fukncjonalnej która pozwoli na ustalenie priorytetów w treningu, ukazując ewentualne dysbalanse mięśniowe, zaburzenia w aparacie ruchu lub wady postawy. Po uzyskaniu niezbędnych informacji zostaje rozpisany plan treningowy, który wspólnie realizujemy na sali. Taka forma współpracy zapewnia swobodę w dopasowaniu terminów zajęć, tak by nie kolidowały z Twoim tygodniowym harmonogramem.'
   },
 ]
 
@@ -62,7 +66,9 @@ const Poziom = ({card}) => {
               </LVL>
             )
           })}
-          <LinkStyled className="subtitle bold">Zapisz sie na zajecia</LinkStyled>
+          <LinkStyled className="subtitle bold" as="a" href="tel:+48508378847" >
+            Zadzwoń: +48 508 378 847
+          </LinkStyled>
         </Wrapper>
       </ContainerStyled>
     </PoziomStyled>
