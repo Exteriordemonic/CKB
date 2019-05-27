@@ -7,7 +7,7 @@ const PoziomCard = props => {
   return (
     <PoziomCardStyled {...props}>
       <h3 className="title">{props.title}</h3>
-      <span className="text"> zł/msc</span>
+      <span className="text"> {props.extra}</span>
       <span className="title">{props.dni}</span>
       <PoziomCardIcon>
         {props.active ? (
@@ -41,22 +41,26 @@ const PoziomCardStyled = styled.div`
   border-radius: 30px;
   position: relative;
   transition: 0.4s;
-
-  background: ${props => (props.active ? "#A5A5A5 !important" : "#707070")};
-  box-shadow: ${props => (props.active ? "1px 10px 20px 0px rgba(0,0,0,0.4)" : "1px 10px 20px 0px rgba(0,0,0,0)")};
-  transform: ${props => (props.active ? "scale(1.2) !important" : "scale(1)")};
-  z-index: ${props => (props.active ? "100" : "")};
   width: 250px;
   padding-bottom: 100px;
+  max-width: 25%;
 
-  &:nth-child(2) {
-    background: #333333;
+  @media (max-width: 1024px) {
+    padding-bottom: 70px;
   }
 
   h3 {
     font-size: 30px;
     z-index: 1;
     padding-left: 20px;
+    white-space: nowrap;
+
+    @media(max-width:1024px) {
+      font-size: 25px;
+      text-align: center;
+      padding: 0;
+    }
+    
   }
 
   span:first-of-type {
@@ -68,16 +72,22 @@ const PoziomCardStyled = styled.div`
     margin-bottom: 10px;
 
     margin-top:  80px;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
   }
 
   span:last-of-type {
     font-size: 50px;
     position: relative;
     z-index: 1;
-    padding-left: 50px;
-
     display: block;
-    text-align: left;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+      font-size: 25px;
+    }
 
     :after {
       content: '${props => props.dni}';
@@ -85,11 +95,15 @@ const PoziomCardStyled = styled.div`
       top: 20%;
       left: 0; 
       right: 0;
-      font-size: 120px;
+      font-size: 5vw;
       opacity: 0.2;
       display: block;
       width: 100%;
       text-align: center;
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
     }
   }
 `

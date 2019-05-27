@@ -5,8 +5,12 @@ export const ContainerStyled = styled.div`
     height: 100%;
     max-width: 100%;
 
+    @media (max-width: 1440px) {
+        padding: ${props => props.small ? '0 50px' : '0 50px'};
+    }
+
     @media (max-width: 1024px) {
-        padding: ${props => props.small ? '0 100px' : '0 100px'};
+        padding: ${props => props.small ? '0 50px' : '0 50px'};
     }
 
     @media (max-width: 768px) {

@@ -35,14 +35,14 @@ const Images = [G7, G9,G5, G4, G8,G2, G1, G6, G3]
 class IndexPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      card : 1,
-    };
     this.selectCardHandle = this.selectCardHandle.bind(this); 
   }
 
   componentWillMount() {
-    this.state =  { supernav: cookie.load('supernav') == 'false' ? false : true }
+    this.state =  { 
+      supernav: cookie.load('supernav') == 'false' ? false : true,
+      card : 1,
+    }
   }
 
   selectCardHandle(e) {
@@ -61,10 +61,10 @@ class IndexPage extends Component {
         <Hero />
         <SkewBackground>
           <About />
-          {/* <PoziomCardSection selectCard={this.selectCardHandle} card={this.state.card} /> */}
+          <PoziomCardSection selectCard={this.selectCardHandle} card={this.state.card}  />
           {/* <Poziom card={this.state.card} /> */}
-        <Sala background={SalaImg} />
         </SkewBackground>
+        <Sala background={SalaImg} />
         <ImagesGrid images={Images}/>
       </Layout>
     )

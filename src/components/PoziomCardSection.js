@@ -12,9 +12,10 @@ const PoziomCardSection = ({selectCard, card}) => {
   return (
     <ContainerStyled>
       <PoziomCardSectionStyled>
-        <PoziomCardStyled onClick={selectCard} data-index="0" title="Adept" dni="120" active={card == 0 ? true : false} />
-        <PoziomCardStyled onClick={selectCard} data-index="1" title="Activ" dni="120" active={card == 1 ? true : false} />
-        <PoziomCardStyled onClick={selectCard} data-index="2" title="Advanced" dni="120" active={card == 2 ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="0" title="Adept" extra="zł/msc" dni="120" active={card == '0' ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="1" title="Activ" extra="zł/msc" dni="120" active={card == '1' ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="2" title="Advanced" extra="zł/msc" dni="160" active={card == '2' ? true : false} />
+        <PoziomCardStyled onClick={selectCard} data-index="3" title="Presonal" extra="zł/h" dni="100" active={card == '3' ? true : false} />
       </PoziomCardSectionStyled>
     </ContainerStyled>
   )
@@ -37,19 +38,25 @@ const PoziomCardSectionStyled = styled.div`
 `
 
 const PoziomCardStyled = styled(PoziomCard)`
-  :nth-of-type(1) {
-    position: absolute;
-    right: 60%;
-  }
+  position: relative;
 
-  :nth-of-type(2) {
-      z-index: 1;
+  &:nth-child(1) {
+    background: #707070cc;
   }
+  &:nth-child(2) {
+    background: #707070b3;
+  }
+  &:nth-child(3) {
+    background: #70707099;
+  }
+  &:nth-child(4) {
+    background: #70707080;
+  }
+  background: ${props => (props.active ? colors.black + ' !important' : " ")};
 
-  :nth-of-type(3) {
-    position: absolute;
-    left: 60%;
-  }
+  box-shadow: ${props => (props.active ? "1px 10px 20px 0px rgba(0,0,0,0.4)" : "1px 10px 20px 0px rgba(0,0,0,0)")};
+  transform: ${props => (props.active ? "scale(1.2) !important" : "scale(1)")};
+  z-index: ${props => (props.active ? "100" : "")};
 `
 
 export default PoziomCardSection
