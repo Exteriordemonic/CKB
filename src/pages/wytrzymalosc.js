@@ -1,32 +1,101 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
+import { graphql } from "gatsby"
 
+import Header from '../common/navigation'
 import Layout from "../components/layout"
 import SmallHero from '../components/smallHero'
 import Content from '../components/content'
 
-import img1 from '../images/tgu/3.jpg' 
-import img2 from '../images/tgu/5.jpg' 
-
-import image from '../images/pages/wytrzymalosc.jpg' 
-
 class Wytrzymalosc extends Component {
   render() {
-    return(
+    const ckb = this.props.data.ckb.childImageSharp.fixed;
+    const mct = this.props.data.mct.childImageSharp.fixed;
+    const kolonia = this.props.data.kolonia.childImageSharp.fixed;
+    const imageOne = this.props.data.imageOne.childImageSharp.fixed;
+    const imageTwo = this.props.data.imageTwo.childImageSharp.fixed;
+
+    return (
       <Layout supernav={false}>
-        <SmallHero title="WYTRZYMAŁOŚĆ" img={image}/>
-        <Content img1={img1} img2={img2} >
+        <Header supernav={false} img={[ckb, mct, kolonia]} />
+        <SmallHero title="WYTRZYMAŁOŚĆ" img={imageOne} />
+        <Content img={imageTwo}>
           <h2>Kształtowanie wytrzymałości</h2>
           <p className="text">
-          Kształtujemy ją w oparciu o dwie najważniejsze techniki- Swing i Snatch, pamiętając o tym że jest to również umiejętność podobnie jak siła, więc traktujemy więc ją jako praktykę stosując odpowiednią progresję w danych ćwiczeniach.
+            Kształtujemy ją w oparciu o dwie najważniejsze techniki- Swing i Snatch, pamiętając o tym że jest to również umiejętność podobnie jak siła, więc traktujemy więc ją jako praktykę stosując odpowiednią progresję w danych ćwiczeniach.
           </p>
           <p className="text">
-          Pozwalamy aby nasz organizm adaptował się do co raz mocniejszego bodźca stopniowo zwiększając objętość danego ćwiczenia, czy to poprzez liczbę powtórzeń lub czas pracy. Takie podejście pozwala na bezpieczne budowanie wytrzymałości i uniknięcie efektu przetrenowania lub nawet kontuzji.
+            Pozwalamy aby nasz organizm adaptował się do co raz mocniejszego bodźca stopniowo zwiększając objętość danego ćwiczenia, czy to poprzez liczbę powtórzeń lub czas pracy. Takie podejście pozwala na bezpieczne budowanie wytrzymałości i uniknięcie efektu przetrenowania lub nawet kontuzji.
           </p>
         </Content>
       </Layout>
     )
   }
 }
+
+export const query = graphql`
+query {
+  ckb: file(relativePath: {eq: "ckb.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  mct: file(relativePath: {eq: "mct.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  kolonia: file(relativePath: {eq: "kolonia.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  imageOne: file(relativePath: {eq: "pages/strong.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  },
+  imageTwo: file(relativePath: {eq: "tgu/3.jpg"}) {
+    childImageSharp {
+      fixed(width: 1920) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        srcWebp
+        srcSetWebp
+      }
+    }
+  }
+}
+`
 
 
 export default Wytrzymalosc

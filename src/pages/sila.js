@@ -7,12 +7,6 @@ import Layout from "../components/layout"
 import SmallHero from '../components/smallHero'
 import Content from '../components/content'
 
-
-import img1 from '../images/tgu/3.jpg'
-import img2 from '../images/tgu/5.jpg'
-
-import image from '../images/pages/strong.jpg'
-
 class Sila extends Component {
   render() {
     const ckb = this.props.data.ckb.childImageSharp.fixed;
