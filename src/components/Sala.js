@@ -3,7 +3,7 @@ import React from "react"
 import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 
-import Header from './sectionHeader'
+import Header from "./sectionHeader"
 
 const Sala = ({ background }) => {
   const kettleBellIcon = (
@@ -31,19 +31,22 @@ const Sala = ({ background }) => {
       <SalaBackgroundOverlay />
       <SalaBackground>
         <SalaInfo>
-          <Header title="Nasza" subtitle="Sala treningowa" isInverted/>
+          <Header title="Nasza" subtitle="Sala treningowa" isInverted />
           <SalaText className="text" inverted>
-          CKB Mrągowo mieście się w sali przy ul. Lubleskie 44. Do dyspozycji studentów jest lokal o piwerzchni blisko 200 m2, w nim dwie sale treningowe po 60 m każda, recepcja oraz poczekalnia z wygodną kanapą, toaleta i dwie szatnie
-          <br/>
-          <br/>
-          - Odważniki serii CKB PRO i Girya Fitness w zakresie od 4 kg do 48 kg <br />
-          - Sztangi i obciążenie do 200 kg <br />
-          - Obciążenie gumowe do 180 kg <br />
-          - Poręcze przenośne do dipów <br />
-          - Drążki ścienne <br />
-          - Koła gimnastyczne i TRX <br />
-          - Sprzęt do treningu motorycznego i funkcjonalnego
-
+            CKB Mrągowo mieście się w sali przy ul. Lubleskie 44. Do dyspozycji
+            studentów jest lokal o piwerzchni blisko 200 m2, w nim dwie sale
+            treningowe po 60 m każda, recepcja oraz poczekalnia z wygodną
+            kanapą, toaleta i dwie szatnie
+            <br />
+            <br />
+            - Odważniki serii CKB PRO i Girya Fitness w zakresie od 4 kg do 48
+            kg <br />
+            - Sztangi i obciążenie do 200 kg <br />
+            - Obciążenie gumowe do 180 kg <br />
+            - Poręcze przenośne do dipów <br />
+            - Drążki ścienne <br />
+            - Koła gimnastyczne i TRX <br />- Sprzęt do treningu motorycznego i
+            funkcjonalnego
           </SalaText>
 
           {/* <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled> */}
@@ -68,10 +71,10 @@ const Sala = ({ background }) => {
             <i>{kettleBellIcon}</i>16kg x 8
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>20kg x  6
+            <i>{kettleBellIcon}</i>20kg x 6
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>24kg  x  6
+            <i>{kettleBellIcon}</i>24kg x 6
           </SalaIconElement>
           <SalaIconElement>
             <i>{kettleBellIcon}</i>28kg x 2
@@ -101,7 +104,7 @@ const SalaContainer = styled(ContainerStyled)`
   position: relative;
   margin: 100px;
   border-radius: 20px;
-  overflow: hidden;  
+  overflow: hidden;
 `
 
 const SalaBackground = styled.div`
@@ -113,7 +116,7 @@ const SalaBackground = styled.div`
   box-sizing: border-box;
   position: relative;
 
-  @media (max-width: 1100px){
+  @media (max-width: 1100px) {
     grid-template-columns: 1fr;
   }
 
@@ -155,7 +158,7 @@ const SalaIcons = styled.div`
     margin-right: 20px;
   }
 
-  @media (max-width: 576px){
+  @media (max-width: 576px) {
     grid-template-columns: 1fr;
   }
 `

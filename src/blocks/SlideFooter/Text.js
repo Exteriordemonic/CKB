@@ -1,9 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { Colors } from '../../vendors/variables.js'
+import { Colors } from "../../vendors/variables.js"
 
 const Text = styled.p`
-  
   transition: 0.8s;
   position: absolute;
   font-weight: 700;
@@ -14,7 +13,7 @@ const Text = styled.p`
     opacity: 0;
     transition: 0.8s;
 
-    &-active{
+    &-active {
       opacity: 0;
     }
   }
@@ -29,9 +28,9 @@ const Text = styled.p`
     }
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     color: ${Colors.special};
   }
-`;
+`
 
-export default Text;
+export default Text

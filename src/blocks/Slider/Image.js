@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 const Image = styled.img`
   object-fit: cover;
@@ -12,7 +12,7 @@ const Image = styled.img`
     opacity: 1;
     transition: 0.8s;
 
-    &-active{
+    &-active {
       opacity: 0;
     }
   }
@@ -26,4 +26,4 @@ const Image = styled.img`
   }
 `
 
-export default Image;
+export default Image

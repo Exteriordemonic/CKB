@@ -1,6 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import {colors} from './variables';
-
+import { createGlobalStyle } from "styled-components"
+import { colors } from "./variables"
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');

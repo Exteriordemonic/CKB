@@ -41,7 +41,7 @@ const ImagesGridStyled = styled.div`
       "c d"
       "e e"
       "g h"
-      "f f"
+      "f f";
   }
 `
 

@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { Gutter } from '../../vendors/variables.js'
+import { Gutter } from "../../vendors/variables.js"
 
-import Button from './Button.js'
+import Button from "./Button.js"
 
 const Navigation = styled.ul`
   position: absolute;
@@ -31,6 +31,6 @@ const Navigation = styled.ul`
     width: 30vw;
   }
 `
-Navigation.Button = Button;
+Navigation.Button = Button
 
-export default Navigation;
+export default Navigation

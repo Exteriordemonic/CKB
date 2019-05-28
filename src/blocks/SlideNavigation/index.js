@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 
-import Arrow from '../../images/arrow.svg'
+import Arrow from "../../images/arrow.svg"
 
-import Navigation from './Navigation'
+import Navigation from "./Navigation"
 
 class SlideNavigation extends Component {
   render() {
@@ -10,12 +10,12 @@ class SlideNavigation extends Component {
       <Navigation>
         <li>
           <Navigation.Button direction="prev" onClick={this.props.prevSlide}>
-            <img src={Arrow} alt=""/>
+            <img src={Arrow} alt="" />
           </Navigation.Button>
         </li>
         <li>
           <Navigation.Button onClick={this.props.nextSlide}>
-            <img src={Arrow} alt=""/>
+            <img src={Arrow} alt="" />
           </Navigation.Button>
         </li>
       </Navigation>
@@ -23,4 +23,4 @@ class SlideNavigation extends Component {
   }
 }
 
-export default SlideNavigation;
+export default SlideNavigation

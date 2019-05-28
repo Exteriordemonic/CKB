@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react"
+import PropTypes from "prop-types"
 
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 
-import Slider from './Slider.js'
+import Slider from "./Slider.js"
 
 export default class Slide extends Component {
   constructor(props) {
@@ -11,36 +11,35 @@ export default class Slide extends Component {
 
     this.state = {
       current: 0,
-      length: this.props.data.length
+      length: this.props.data.length,
     }
 
-    this.changeSlide = this.changeSlide.bind(this);
-
+    this.changeSlide = this.changeSlide.bind(this)
   }
 
   componentDidMount() {
-    setInterval(()=> {
-      console.log('TEST 2');
-      this.nextSlide();
+    setInterval(() => {
+      console.log("TEST 2")
+      this.nextSlide()
     }, 2000)
   }
-  
+
   static propTypes = {
-    data: PropTypes.any
+    data: PropTypes.any,
   }
 
   changeSlide(e) {
     this.setState({
-      current: e.target.getAttribute('data-index')
+      current: e.target.getAttribute("data-index"),
     })
   }
 
   nextSlide() {
-    let current = this.state.current;
-    current++;
+    let current = this.state.current
+    current++
 
     this.setState({
-      current : current > this.state.length - 1 ? 0 : current
+      current: current > this.state.length - 1 ? 0 : current,
     })
   }
 
@@ -48,10 +47,10 @@ export default class Slide extends Component {
     return (
       <Slider>
         <TransitionGroup className="image-wrapper">
-          <CSSTransition 
-              classNames="image" 
-              key={this.props.data[this.state.current]} 
-              timeout={{enter: 0, exit:800}}
+          <CSSTransition
+            classNames="image"
+            key={this.props.data[this.state.current]}
+            timeout={{ enter: 0, exit: 800 }}
           >
             <Slider.Image src={this.props.data[this.state.current]} />
           </CSSTransition>

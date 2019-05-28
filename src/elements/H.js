@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { FontSize } from '../vendors/variables.js'
+import { FontSize } from "../vendors/variables.js"
 
 const H1 = styled.h1`
   font-size: ${FontSize.heading.desktop};
@@ -16,7 +16,6 @@ const H1 = styled.h1`
 
 const H2 = styled(H1)`
   font-size: ${FontSize.title.desktop};
-  
 
   @media (max-width: 767px) {
     font-size: ${FontSize.title.mobile};
@@ -31,8 +30,4 @@ const H3 = styled(H1)`
   }
 `
 
-export  {
-  H1,
-  H2,
-  H3
-};
+export { H1, H2, H3 }

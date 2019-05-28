@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
 const propTypes = {
   path: PropTypes.string.isRequired,
@@ -11,11 +11,13 @@ const contextTypes = {
 }
 
 const Link = ({ path, children }) => {
-  return <NavItem>
-    <NavLink exact to={path} className="nav-link">
-      {children}
-    </NavLink>
-  </NavItem>
+  return (
+    <NavItem>
+      <NavLink exact to={path} className="nav-link">
+        {children}
+      </NavLink>
+    </NavItem>
+  )
 }
 
 Link.propTypes = propTypes

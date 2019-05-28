@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { Gutter, Colors } from '../../vendors/variables'
+import { Gutter, Colors } from "../../vendors/variables"
 
 const Title = styled.span`
   position: absolute;
@@ -12,10 +12,10 @@ const Title = styled.span`
   font-weight: 900;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     background-color: ${Colors.light};
-    right: calc( 100% + ${Gutter * 4}px );
+    right: calc(100% + ${Gutter * 4}px);
     top: 0;
     bottom: 0;
     margin: auto;
@@ -23,9 +23,9 @@ const Title = styled.span`
     height: ${Gutter * 1}px;
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `
 
-export default Title;
+export default Title

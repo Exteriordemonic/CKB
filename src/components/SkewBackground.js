@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import React from "react"
 
-const SkewBackground = ({children}) => {
+const SkewBackground = ({ children }) => {
   return (
     <SkewBackgroundStyled>
       {children}
@@ -12,7 +12,7 @@ const SkewBackground = ({children}) => {
 
 const SkewBackgroundStyled = styled.div`
   position: relative;
-  background: #E8E8E8;
+  background: #e8e8e8;
   width: 100%;
   height: 100%;
   z-index: 0;

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { Gutter, Colors } from '../../vendors/variables.js'
+import { Gutter, Colors } from "../../vendors/variables.js"
 
 const Text = styled.h1`
   padding: ${Gutter * 4}px;
@@ -11,8 +11,8 @@ const Text = styled.h1`
   text-transform: uppercase;
 
   @media (max-width: 1024px) {
-   padding:${Gutter * 2}px ${Gutter * 4}px;
+    padding: ${Gutter * 2}px ${Gutter * 4}px;
   }
-`;
+`
 
-export default Text;
+export default Text

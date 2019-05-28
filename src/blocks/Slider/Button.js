@@ -1,11 +1,10 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { Gutter, Colors } from '../../vendors/variables.js'
+import { Gutter, Colors } from "../../vendors/variables.js"
 
 const Button = styled.button.attrs(({ active }) => ({
-
   // or we can define dynamic ones
-  background: active ? Colors.light : 'transparent',
+  background: active ? Colors.light : "transparent",
 }))`
   width: ${Gutter * 1.5}px;
   height: ${Gutter * 1.4}px;
@@ -14,4 +13,4 @@ const Button = styled.button.attrs(({ active }) => ({
   background-color: ${props => props.background};
 `
 
-export default Button;
+export default Button

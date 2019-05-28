@@ -1,27 +1,30 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 
-import Header from '../common/navigation'
+import Header from "../common/navigation"
 import Layout from "../components/layout"
-import SmallHero from '../components/smallHero'
-import Content from '../components/content'
+import SmallHero from "../components/smallHero"
+import Content from "../components/content"
 
 class Energia extends Component {
   render() {
-    const ckb = this.props.data.ckb.childImageSharp.fixed;
-    const mct = this.props.data.mct.childImageSharp.fixed;
-    const kolonia = this.props.data.kolonia.childImageSharp.fixed;
-    const imageOne = this.props.data.imageOne.childImageSharp.fixed;
-    const imageTwo = this.props.data.imageTwo.childImageSharp.fixed;
+    const ckb = this.props.data.ckb.childImageSharp.fixed
+    const mct = this.props.data.mct.childImageSharp.fixed
+    const kolonia = this.props.data.kolonia.childImageSharp.fixed
+    const imageOne = this.props.data.imageOne.childImageSharp.fixed
+    const imageTwo = this.props.data.imageTwo.childImageSharp.fixed
 
     return (
       <Layout supernav={false}>
-        <Header supernav={false} img={[ckb, mct, kolonia]}/>
+        <Header supernav={false} img={[ckb, mct, kolonia]} />
         <SmallHero title="Energia" img={imageOne} />
         <Content img={imageTwo}>
           <h2>Energia</h2>
           <p className="text">
-            Poznaj moc treningu z odważnikami kulowymi, każda sesja to ogromna dawka pozytywnej energii i wzrost poziomu endorfin. Hardstyle Kettlebell odmieni Twoje podejście do kwestii treningu i pokaże czym jest prawdziwa Siła i Energia.
+            Poznaj moc treningu z odważnikami kulowymi, każda sesja to ogromna
+            dawka pozytywnej energii i wzrost poziomu endorfin. Hardstyle
+            Kettlebell odmieni Twoje podejście do kwestii treningu i pokaże czym
+            jest prawdziwa Siła i Energia.
           </p>
         </Content>
       </Layout>
@@ -30,69 +33,68 @@ class Energia extends Component {
 }
 
 export const query = graphql`
-query {
-  ckb: file(relativePath: {eq: "ckb.jpg"}) {
-    childImageSharp {
-      fixed(width: 1920) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        srcWebp
-        srcSetWebp
+  query {
+    ckb: file(relativePath: { eq: "ckb.jpg" }) {
+      childImageSharp {
+        fixed(width: 1920) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+        }
       }
     }
-  },
-  mct: file(relativePath: {eq: "mct.jpg"}) {
-    childImageSharp {
-      fixed(width: 1920) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        srcWebp
-        srcSetWebp
+    mct: file(relativePath: { eq: "mct.jpg" }) {
+      childImageSharp {
+        fixed(width: 1920) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+        }
       }
     }
-  },
-  kolonia: file(relativePath: {eq: "kolonia.jpg"}) {
-    childImageSharp {
-      fixed(width: 1920) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        srcWebp
-        srcSetWebp
+    kolonia: file(relativePath: { eq: "kolonia.jpg" }) {
+      childImageSharp {
+        fixed(width: 1920) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+        }
       }
     }
-  },
-  imageOne: file(relativePath: {eq: "pages/energia.jpg"}) {
-    childImageSharp {
-      fixed(width: 1920) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        srcWebp
-        srcSetWebp
+    imageOne: file(relativePath: { eq: "pages/energia.jpg" }) {
+      childImageSharp {
+        fixed(width: 1920) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+        }
       }
     }
-  },
-  imageTwo: file(relativePath: {eq: "tgu/3.jpg"}) {
-    childImageSharp {
-      fixed(width: 1920) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        srcWebp
-        srcSetWebp
+    imageTwo: file(relativePath: { eq: "tgu/3.jpg" }) {
+      childImageSharp {
+        fixed(width: 1920) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+        }
       }
     }
   }
-}
 `
-
 
 export default Energia

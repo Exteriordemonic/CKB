@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import { Link } from "gatsby"
 
-import Navigation from './Navigation'
+import Navigation from "./Navigation"
 
 const Nav = () => (
   <Navigation>
@@ -28,4 +28,4 @@ const Nav = () => (
   </Navigation>
 )
 
-export default Nav;
+export default Nav

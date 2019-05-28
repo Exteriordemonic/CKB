@@ -3,15 +3,29 @@ import React from "react"
 import { TitleStyled } from "./Title.styled"
 
 const SectionHeader = ({ title, subtitle, isInverted }) => {
-
-  let Title;
-  let Subtitle;
-  if(title) {
-    Title = <SectionTitle as="span" className="subtitle" minor inverted={isInverted} children={title} />
+  let Title
+  let Subtitle
+  if (title) {
+    Title = (
+      <SectionTitle
+        as="span"
+        className="subtitle"
+        minor
+        inverted={isInverted}
+        children={title}
+      />
+    )
   }
 
-  if(subtitle) {
-    Subtitle = <SectionSubtitle as="span" className="title bold" inverted={isInverted} children={subtitle} />
+  if (subtitle) {
+    Subtitle = (
+      <SectionSubtitle
+        as="span"
+        className="title bold"
+        inverted={isInverted}
+        children={subtitle}
+      />
+    )
   }
 
   return (

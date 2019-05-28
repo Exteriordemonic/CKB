@@ -1,13 +1,13 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import {Gutter} from '../../vendors/variables'
+import { Gutter } from "../../vendors/variables"
 
-import Ul from '../../elements/Ul.js'
+import Ul from "../../elements/Ul.js"
 
-import Image from './Image.js'
-import Navigation from './Navigation.js'
-import Button from './Button.js'
-import Element from './Element.js'
+import Image from "./Image.js"
+import Navigation from "./Navigation.js"
+import Button from "./Button.js"
+import Element from "./Element.js"
 
 const Slider = styled(Ul)`
   display: inline-block;
@@ -22,9 +22,9 @@ const Slider = styled(Ul)`
   }
 `
 
-Slider.Image = Image;
-Slider.Navigation = Navigation;
-Slider.Button = Button;
-Slider.Element = Element;
+Slider.Image = Image
+Slider.Navigation = Navigation
+Slider.Button = Button
+Slider.Element = Element
 
-export default Slider;
+export default Slider

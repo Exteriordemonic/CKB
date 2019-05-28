@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import Ul from '../../elements/Ul.js'
+import Ul from "../../elements/Ul.js"
 
-import {Gutter} from '../../vendors/variables'
+import { Gutter } from "../../vendors/variables"
 
 const List = styled(Ul)`
   display: grid;
@@ -15,6 +15,6 @@ const List = styled(Ul)`
     grid-template-columns: 1fr;
     grid-gap: ${Gutter * 5}px;
   }
-`;
+`
 
-export default List;
+export default List

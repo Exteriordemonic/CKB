@@ -9,13 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import { Preloader, Placeholder } from 'react-preloading-screen';
+import { Preloader, Placeholder } from "react-preloading-screen"
 
-import Footer from '../common/Footer'
+import Footer from "../common/Footer"
 
-import '../styles/styles.scss'
+import "../styles/styles.scss"
 
-const Layout = ({ supernav, children, data }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -27,13 +27,10 @@ const Layout = ({ supernav, children, data }) => (
       }
     `}
     render={data => (
-      <Preloader>
+      <>
         <main>{children}</main>
         <Footer />
-        <Placeholder>
-            <span>Ładowanie...</span>
-        </Placeholder>
-      </Preloader>
+      </>
     )}
   />
 )

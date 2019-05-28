@@ -1,8 +1,7 @@
-import styled from 'styled-components'
-
+import styled from "styled-components"
 
 const Naviagtion = styled.ul`
-    margin: 0;
+  margin: 0;
 `
 
-export default Naviagtion;
+export default Naviagtion

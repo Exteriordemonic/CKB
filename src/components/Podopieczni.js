@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import React from "react"
 
-import { TransitionGroup, CSSTransition} from 'react-transition-group'
+import { TransitionGroup, CSSTransition } from "react-transition-group"
 
 import { TitleStyled } from "./Title.styled"
 import { LinkStyled } from "./Link.styled"
@@ -9,11 +9,11 @@ import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 import Card from "../components/Card"
 
-import C1 from '../images/g-7.jpg';
+import C1 from "../images/g-7.jpg"
 
-import Header from './sectionHeader'
+import Header from "./sectionHeader"
 
-const Podopieczni = ({card}) => {
+const Podopieczni = ({ card }) => {
   return (
     <PodopieczniStyled>
       <ContainerStyled>
@@ -21,33 +21,45 @@ const Podopieczni = ({card}) => {
       </ContainerStyled>
       <ContainerStyled small>
         <CardsContainer>
-          <Card as="a" href="https://facebook.pl"
+          <Card
+            as="a"
+            href="https://facebook.pl"
             title="Aleksander Kwiatek"
             image={C1}
             cover
           >
-           Sed porttitor lectus nibh lohda. Donec sollicitudin molestie malesuada.
+            Sed porttitor lectus nibh lohda. Donec sollicitudin molestie
+            malesuada.
           </Card>
-          <Card as="a" href="https://facebook.pl"
+          <Card
+            as="a"
+            href="https://facebook.pl"
             title="Aleksander Kwiatek"
             image={C1}
             cover
           >
-           Sed porttitor lectus nibh lohda. Donec sollicitudin molestie malesuada.
+            Sed porttitor lectus nibh lohda. Donec sollicitudin molestie
+            malesuada.
           </Card>
-          <Card as="a" href="https://facebook.pl"
+          <Card
+            as="a"
+            href="https://facebook.pl"
             title="Aleksander Kwiatek"
             image={C1}
             cover
           >
-           Sed porttitor lectus nibh lohda. Donec sollicitudin molestie malesuada.
+            Sed porttitor lectus nibh lohda. Donec sollicitudin molestie
+            malesuada.
           </Card>
-          <Card as="a" href="https://facebook.pl"
+          <Card
+            as="a"
+            href="https://facebook.pl"
             title="Aleksander Kwiatek"
             image={C1}
             cover
           >
-           Sed porttitor lectus nibh lohda. Donec sollicitudin molestie malesuada.
+            Sed porttitor lectus nibh lohda. Donec sollicitudin molestie
+            malesuada.
           </Card>
         </CardsContainer>
       </ContainerStyled>

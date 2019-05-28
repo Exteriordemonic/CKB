@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { FontSize } from '../vendors/variables.js'
+import { FontSize } from "../vendors/variables.js"
 
 const P = styled.p`
   font-size: ${FontSize.text.desktop};
@@ -13,4 +13,4 @@ const P = styled.p`
   }
 `
 
-export default P;
+export default P

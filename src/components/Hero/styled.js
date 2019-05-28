@@ -1,13 +1,13 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { Colors, Gutter } from '../../vendors/variables.js'
+import { Colors, Gutter } from "../../vendors/variables.js"
 
-import SlideFooter from '../../blocks/SlideFooter/Footer.js'
-import Slider from '../../blocks/Slider/Slider.js'
-import Label from '../../blocks/Label/Text.js'
-import Navigation from '../../blocks/Navigation/Navigation.js'
+import SlideFooter from "../../blocks/SlideFooter/Footer.js"
+import Slider from "../../blocks/Slider/Slider.js"
+import Label from "../../blocks/Label/Text.js"
+import Navigation from "../../blocks/Navigation/Navigation.js"
 
-import Title from './Title'
+import Title from "./Title"
 
 const Index = {
   SlideFooter: 10,
@@ -21,7 +21,7 @@ const HeroWrapper = styled.section`
   position: relative;
 
   &:before {
-    content: '';
+    content: "";
     background-color: ${Colors.dark};
     position: absolute;
     width: 100%;
@@ -86,7 +86,7 @@ const HeroWrapper = styled.section`
     }
 
     @media (max-width: 768px) {
-      left: ${Gutter * 5}px; 
+      left: ${Gutter * 5}px;
       top: ${Gutter * 13}px;
     }
   }
@@ -105,13 +105,13 @@ const Image = styled.div`
   .gatsby-image-wrapper {
     width: 100%;
     height: 100%;
-  } 
+  }
 
   &.image-exit {
     opacity: 1;
     transition: 0.8s;
 
-    &-active{
+    &-active {
       transform: translateY(-40px);
       opacity: 0;
     }
@@ -128,9 +128,7 @@ const Image = styled.div`
   }
 `
 
-HeroWrapper.Title = Title;
-HeroWrapper.Image = Image;
+HeroWrapper.Title = Title
+HeroWrapper.Image = Image
 
-export {
-  HeroWrapper
-}
+export { HeroWrapper }

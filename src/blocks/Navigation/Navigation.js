@@ -1,13 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import List from './List'
-import Item from './Item'
+import List from "./List"
+import Item from "./Item"
 
-const Navigation = styled.nav`
+const Navigation = styled.nav``
 
-`
+Navigation.List = List
+Navigation.Item = Item
 
-Navigation.List = List;
-Navigation.Item = Item;
-
-export default Navigation;
+export default Navigation

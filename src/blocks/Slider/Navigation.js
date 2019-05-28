@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import Ul from '../../elements/Ul.js'
+import Ul from "../../elements/Ul.js"
 
-import { Gutter } from '../../vendors/variables.js'
+import { Gutter } from "../../vendors/variables.js"
 
 const Navigation = styled(Ul)`
   display: flex;
@@ -15,4 +15,4 @@ const Navigation = styled(Ul)`
   bottom: 0;
 `
 
-export default Navigation;
+export default Navigation

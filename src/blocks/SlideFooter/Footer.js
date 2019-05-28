@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import { Gutter, Colors } from '../../vendors/variables.js'
+import { Gutter, Colors } from "../../vendors/variables.js"
 
-import List from './List.js'
-import Label from './Label.js'
-import Text from './Text.js'
-import Title from './Title.js'
+import List from "./List.js"
+import Label from "./Label.js"
+import Text from "./Text.js"
+import Title from "./Title.js"
 
 const Footer = styled.footer`
   display: inline-block;
@@ -18,9 +18,9 @@ const Footer = styled.footer`
   }
 `
 
-Footer.List = List;
-Footer.Label = Label;
-Footer.Text = Text;
-Footer.Title = Title;
+Footer.List = List
+Footer.Label = Label
+Footer.Text = Text
+Footer.Title = Title
 
-export default Footer;
+export default Footer

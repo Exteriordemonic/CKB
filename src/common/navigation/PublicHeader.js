@@ -1,13 +1,13 @@
 // import libs
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
 // import components
-import { Collapse } from 'reactstrap'
-import NavItem from './NavItem'
+import { Collapse } from "reactstrap"
+import NavItem from "./NavItem"
 
 // define component name
-const displayName = 'PublicHeader'
+const displayName = "PublicHeader"
 
 // validate properties
 const propTypes = {
@@ -24,7 +24,8 @@ const PublicHeader = ({ showNavigation }) => (
       <NavItem path="/login">Login</NavItem>
       <NavItem path="/register">Register</NavItem>
     </ul>
-  </Collapse>)
+  </Collapse>
+)
 
 // bind properties
 PublicHeader.displayName = displayName
