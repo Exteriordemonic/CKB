@@ -113,11 +113,6 @@ const LVL = styled.div`
   }
 `
 
-const PoziomLabel = styled(TitleStyled)`
-  margin-bottom: 60px;
-  display: block;
-`
-
 const PoziomStyled = styled.div`
   padding: 100px 0;
 `

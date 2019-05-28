@@ -1,7 +1,5 @@
 import styled from "styled-components"
 import React from "react"
-import PropTypes from "prop-types"
-import { colors } from "../styles/variables"
 import { TitleStyled } from "./Title.styled"
 import { LinkStyled } from "./Link.styled"
 import { TextStyled } from "./Text.styled"
@@ -86,17 +84,6 @@ const AboutImage2 = styled.img`
   @media (max-width: 768px) {
     display: none;
   }
-`
-
-const AboutVideo = styled.img`
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  bottom: -100px;
-  right: 200px;
-  z-index: 4;
-  object-fit: cover;
-  object-position: top;
 `
 
 export default About

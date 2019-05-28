@@ -13,7 +13,7 @@ const Index = {
   SlideFooter: 10,
   Label: 20,
   Slider: 30,
-  Navigation: 30,
+  Navigation: 50,
 }
 
 const HeroWrapper = styled.section`
@@ -50,6 +50,7 @@ const HeroWrapper = styled.section`
       margin: 0 auto;
       top: ${Gutter * 45}px;
       bottom: unset;
+      z-index: 400;
     }
 
     @media (max-width: 768px) {
@@ -80,19 +81,17 @@ const HeroWrapper = styled.section`
     z-index: ${Index.Navigation};
 
     @media (max-width: 1200px) {
-      z-index: ${Index.Slider + Index.Label};
       top: ${Gutter * 21}px;
       left: ${Gutter * 10}px;
     }
 
     @media (max-width: 768px) {
-      z-index: ${Index.Slider + Index.Label};
       left: ${Gutter * 5}px; 
       top: ${Gutter * 13}px;
     }
   }
 `
-const Image = styled.img`
+const Image = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -102,6 +101,11 @@ const Image = styled.img`
   z-index: -1;
 
   transition: 0.8s;
+
+  .gatsby-image-wrapper {
+    width: 100%;
+    height: 100%;
+  } 
 
   &.image-exit {
     opacity: 1;

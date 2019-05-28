@@ -1,12 +1,7 @@
 import React from 'react';
-import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import styled from 'styled-components'
-
-import ckb from '../../images/ckb.jpg'
-import mct from '../../images/mct.jpg'
-import kolonia from '../../images/kolonia.jpg'
 
 const Data = [
   {
@@ -35,7 +30,6 @@ const SuperNav = props => (
       return (<Item key={i}>
         <Link href={elem.link} onClick={props.clickHandler}>
           <Img fixed={props.img[i]} alt={elem.title} />
-          {/* <Imagee src={elem.image} onClick={props.clickHandler} alt={elem.title} /> */}
         </Link>
       </Item>)
     })}
@@ -79,30 +73,6 @@ const Link = styled.a`
       height: 100%;
     }
 
-`
-
-const Title = styled.span`
-  color: white;
-  font-size: 2vw;
-  text-align: center;
-  text-transform: uppercase;
-  height: 20px;
-`
-
-const Imagee = styled.img`
-  transition: 0.4s;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.4;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  &:hover {
-    opacity: 1;
-  }
 `
 
 export default SuperNav;

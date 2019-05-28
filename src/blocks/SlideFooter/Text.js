@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Gutter, Colors } from '../../vendors/variables.js'
+import { Colors } from '../../vendors/variables.js'
 
 const Text = styled.p`
   

@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 import { Gutter, Colors } from '../../vendors/variables'
 
-import { H1 } from '../../elements/H'
-
 const Title = styled.span`
   position: absolute;
   top: ${Gutter * 14}px;

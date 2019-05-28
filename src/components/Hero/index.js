@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import { TransitionGroup, CSSTransition} from 'react-transition-group'
 
+import Img from "gatsby-image"
 
 import Label from '../../blocks/Label'
 import SlideNavigation from '../../blocks/SlideNavigation'
@@ -21,14 +22,6 @@ import Slider2 from '../../images/tgu/2.jpg';
 import Slider3 from '../../images/tgu/3.jpg';
 import Slider4 from '../../images/tgu/4.jpg';
 import Slider5 from '../../images/tgu/5.jpg';
-
-import Slider21 from '../../images/ckb-1.jpg';
-import Slider22 from '../../images/ckb-1.jpg';
-import Slider23 from '../../images/ckb-1.jpg';
-
-import Slider31 from '../../images/ckb-1.jpg';
-import Slider32 from '../../images/ckb-1.jpg';
-import Slider33 from '../../images/ckb-1.jpg';
 
 const SliderImages = [HeroImg, HeroImg2, HeroImg3];
 
@@ -66,7 +59,7 @@ export default class Hero extends Component {
       super(props);
       this.state = {
         slide : 0,
-        length : SliderImages.length
+        length : this.props.img.length
       };
     }
 
@@ -111,7 +104,9 @@ export default class Hero extends Component {
             key={SliderImages[this.state.slide]} 
             timeout={{enter: 0, exit:800}}
         >
-            <HeroWrapper.Image src={SliderImages[this.state.slide]} alt=""/>
+          <HeroWrapper.Image>
+            <Img fixed={this.props.img[this.state.slide]} />
+          </HeroWrapper.Image>
         </CSSTransition>
         </TransitionGroup>
         <HeroWrapper.Title as="span" className="headline">

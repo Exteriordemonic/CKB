@@ -1,7 +1,5 @@
 import styled from "styled-components"
 import React from "react"
-import PropTypes from "prop-types"
-import { colors } from "../styles/variables"
 
 const SkewBackground = ({children}) => {
   return (
