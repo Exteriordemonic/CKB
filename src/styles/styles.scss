@@ -4,3 +4,12 @@
 /** Components */
 @import "./components/hero";
 @import "./components/content";
+
+
+.container {
+  padding: 0 100px;
+
+  @media (max-width: 767px) {
+    padding: 0 15px;
+  } 
+}

@@ -6,7 +6,7 @@ import styled from "styled-components"
 const Data = [
   {
     image: "",
-    link: "#",
+    link: "/",
     title: "CKB",
   },
   {

@@ -1,24 +1,12 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
-import cookie from "react-cookies"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 import Header from "../common/navigation"
+import Layout from "../components/layout"
 import SmallHero from "../components/smallHero"
 import Content from "../components/content"
 
 class Sila extends Component {
-
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      supernav: cookie.load("supernav") === "false" ? false : true,
-    }
-  }
-
   render() {
     const ckb = this.props.data.ckb.childImageSharp.fixed
     const mct = this.props.data.mct.childImageSharp.fixed
@@ -27,25 +15,8 @@ class Sila extends Component {
     const imageTwo = this.props.data.imageTwo.childImageSharp.fixed
 
     return (
-      <Layout supernav={this.props.supernav}>
-        <SEO
-          title="Siła"
-          keywords={[
-            `strongfirst polska`,
-            `strongfirst program`,
-            `Trening`,
-            `sylwetka`,
-            `siła`,
-            `StrongFirst`,
-            `kettlebells`,
-            `kettlebell olsztyn`,
-            `kettlebell mragowo`,
-            `kettlebell swing`,
-            `kettlebell hardstyle`,
-            `	kettlebell ckb`,
-          ]}
-        />
-        <Header supernav={this.props.supernav} img={[ckb, mct, kolonia]} />
+      <Layout supernav={false}>
+        <Header supernav={false} img={[ckb, mct, kolonia]} />
         <SmallHero title="DEFINICJA SIŁY" img={imageOne} />
         <Content img={imageTwo}>
           <h2>Siła jest umiejętnością</h2>

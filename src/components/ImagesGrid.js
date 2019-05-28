@@ -1,14 +1,21 @@
 import styled from "styled-components"
 import React from "react"
 import PropTypes from "prop-types"
+import Img from "gatsby-image"
+
 import { colors } from "../styles/variables"
+
+
+
 
 const ImagesGrid = ({ images }) => {
   return (
     <ImagesGridStyled>
       <ImagesGridOverlay />
       {images.map((src, index) => {
-        return <ImagesGridElement src={src} key={index} />
+        return (<ImagesGridElement>
+          <Img fixed={src} className="grid_image" />
+        </ImagesGridElement>)
       })}
     </ImagesGridStyled>
   )
@@ -45,50 +52,64 @@ const ImagesGridStyled = styled.div`
   }
 `
 
-const ImagesGridElement = styled.img`
+const ImagesGridElement = styled.div`
   object-fit: cover;
   object-position: center;
   min-height: 300px;
   height: 100%;
   width: 100%;
 
-  @media (max-width: 1024px) {
-    min-height: 200px;
-  }
+  .grid_image {
+    width: 100%;
+    height: 100%;
 
-  :nth-of-type(1) {
-    grid-area: a;
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: ${colors.golden};
+      z-index: 100;
+      opacity: 0.5;
+    }
   }
 
   :nth-of-type(2) {
-    grid-area: b;
+    grid-area: a;
   }
 
   :nth-of-type(3) {
-    grid-area: c;
+    grid-area: b;
   }
 
   :nth-of-type(4) {
-    grid-area: d;
+    grid-area: c;
   }
 
   :nth-of-type(5) {
-    grid-area: e;
+    grid-area: d;
   }
 
   :nth-of-type(6) {
-    grid-area: f;
+    grid-area: e;
   }
 
   :nth-of-type(7) {
-    grid-area: g;
+    grid-area: f;
   }
 
   :nth-of-type(8) {
-    grid-area: h;
+    grid-area: g;
   }
 
   :nth-of-type(9) {
+    grid-area: h;
+  }
+
+  :nth-of-type(10) {
     grid-area: i;
   }
 `

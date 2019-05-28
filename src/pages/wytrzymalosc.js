@@ -1,8 +1,10 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 
-import Header from "../common/navigation"
+import SEO from "../components/seo"
+
 import Layout from "../components/layout"
+import Header from "../common/navigation"
 import SmallHero from "../components/smallHero"
 import Content from "../components/content"
 
@@ -16,6 +18,23 @@ class Wytrzymalosc extends Component {
 
     return (
       <Layout supernav={false}>
+        <SEO
+          title="Wytrzymałość"
+          keywords={[
+            `strongfirst polska`,
+            `strongfirst program`,
+            `Trening`,
+            `sylwetka`,
+            `siła`,
+            `StrongFirst`,
+            `kettlebells`,
+            `kettlebell olsztyn`,
+            `kettlebell mragowo`,
+            `kettlebell swing`,
+            `kettlebell hardstyle`,
+            `	kettlebell ckb`,
+          ]}
+        />
         <Header supernav={false} img={[ckb, mct, kolonia]} />
         <SmallHero title="WYTRZYMAŁOŚĆ" img={imageOne} />
         <Content img={imageTwo}>

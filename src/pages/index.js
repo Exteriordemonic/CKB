@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 import cookie from "react-cookies"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 
 // import components
 import Header from "../common/navigation"
@@ -15,19 +15,7 @@ import Poziom from "../components/Poziom"
 import ImagesGrid from "../components/ImagesGrid"
 import Sala from "../components/Sala"
 
-import G1 from "../images/gallery/1.jpg"
-import G2 from "../images/gallery/2.jpg"
-import G3 from "../images/gallery/3.jpg"
-import G4 from "../images/gallery/4.jpg"
-import G5 from "../images/gallery/5.jpg"
-import G6 from "../images/gallery/6.jpg"
-import G7 from "../images/gallery/7.jpg"
-import G8 from "../images/gallery/8.jpg"
-import G9 from "../images/gallery/9.jpg"
-
 import SalaImg from "../images/hero.jpg"
-
-const Images = [G7, G9, G5, G4, G8, G2, G1, G6, G3]
 
 class IndexPage extends Component {
   constructor(props) {
@@ -59,6 +47,17 @@ class IndexPage extends Component {
     const heroTwo = this.props.data.heroTwo.childImageSharp.fixed
     const heroThree = this.props.data.heroThree.childImageSharp.fixed
 
+    const G1 = this.props.data.Slide1.childImageSharp.fixed;
+    const G2 = this.props.data.Slide2.childImageSharp.fixed;
+    const G3 = this.props.data.Slide3.childImageSharp.fixed;
+    const G4 = this.props.data.Slide4.childImageSharp.fixed;
+    const G5 = this.props.data.Slide5.childImageSharp.fixed;
+    const G6 = this.props.data.Slide6.childImageSharp.fixed;
+    const G7 = this.props.data.Slide7.childImageSharp.fixed;
+    const G8 = this.props.data.Slide8.childImageSharp.fixed;
+    const G9 = this.props.data.Slide9.childImageSharp.fixed;
+    const slider = [G7, G9, G5, G4, G8, G2, G1, G6, G3];
+
     return (
       <Layout supernav={this.state.supernav}>
         <SEO
@@ -89,7 +88,7 @@ class IndexPage extends Component {
           <Poziom card={this.state.card} />
         </SkewBackground>
         <Sala background={SalaImg} />
-        <ImagesGrid images={Images} />
+        <ImagesGrid images={slider} />
       </Layout>
     )
   }
@@ -108,7 +107,7 @@ export const query = graphql`
           srcSetWebp
         }
       }
-    }
+    },
     mct: file(relativePath: { eq: "mct.jpg" }) {
       childImageSharp {
         fixed(width: 800) {
@@ -120,7 +119,7 @@ export const query = graphql`
           srcSetWebp
         }
       }
-    }
+    },
     kolonia: file(relativePath: { eq: "kolonia.jpg" }) {
       childImageSharp {
         fixed(width: 800) {
@@ -132,7 +131,7 @@ export const query = graphql`
           srcSetWebp
         }
       }
-    }
+    },
     heroOne: file(relativePath: { eq: "kb-1.jpg" }) {
       childImageSharp {
         fixed(width: 1920) {
@@ -144,7 +143,7 @@ export const query = graphql`
           srcSetWebp
         }
       }
-    }
+    },
     heroTwo: file(relativePath: { eq: "kb-3.jpg" }) {
       childImageSharp {
         fixed(width: 1920) {
@@ -156,7 +155,7 @@ export const query = graphql`
           srcSetWebp
         }
       }
-    }
+    },
     heroThree: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fixed(width: 1920) {
@@ -168,7 +167,88 @@ export const query = graphql`
           srcSetWebp
         }
       }
-    }
+    },
+    Slide1: file(relativePath: { eq: "gallery/1.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide2: file(relativePath: { eq: "gallery/2.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide3: file(relativePath: { eq: "gallery/3.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide4: file(relativePath: { eq: "gallery/4.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide5: file(relativePath: { eq: "gallery/5.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide6: file(relativePath: { eq: "gallery/6.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide7: file(relativePath: { eq: "gallery/7.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide8: file(relativePath: { eq: "gallery/8.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide9: file(relativePath: { eq: "gallery/9.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
   }
 `
 
