@@ -27,10 +27,13 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <Preloader>
         <main>{children}</main>
         <Footer />
-      </>
+        <Placeholder>
+          
+        </Placeholder>
+      </Preloader>
     )}
   />
 )
