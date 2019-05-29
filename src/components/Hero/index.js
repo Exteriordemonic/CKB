@@ -111,13 +111,13 @@ export default class Hero extends Component {
         </HeroWrapper.Title>
         <Navigation />
 
-        <Label label={Title} />
+        {/* <Label label={Title} />
         <Slider data={SmallSlider[this.state.slide]} smallSlider={this.props.smallSlider}/>
         <SlideNavigation
           prevSlide={this.prevSlide.bind(this)}
           nextSlide={this.nextSlide.bind(this)}
         />
-        <SlideFooter data={SliderContent[this.state.slide]} />
+        <SlideFooter data={SliderContent[this.state.slide]} /> */}
       </HeroWrapper>
     )
   }
