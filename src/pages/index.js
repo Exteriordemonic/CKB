@@ -56,7 +56,7 @@ class IndexPage extends Component {
     const G7 = this.props.data.Slide7.childImageSharp.fixed;
     const G8 = this.props.data.Slide8.childImageSharp.fixed;
     const G9 = this.props.data.Slide9.childImageSharp.fixed;
-    const slider = [G7, G9, G5, G4, G8, G2, G1, G6, G3];
+    const slider = [G7, G5, G9, G4, G8, G2, G1, G6, G3];
 
     const ss1 = this.props.data.Ss1.childImageSharp.fixed;
     const ss2 = this.props.data.Ss2.childImageSharp.fixed;
@@ -176,7 +176,7 @@ export const query = graphql`
         }
       }
     },
-    Slide1: file(relativePath: { eq: "gallery/1.jpg" }) {
+    Slide1: file(relativePath: { eq: "wakacje/1.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
@@ -185,7 +185,7 @@ export const query = graphql`
         }
       }
     },
-    Slide2: file(relativePath: { eq: "gallery/2.jpg" }) {
+    Slide2: file(relativePath: { eq: "wakacje/2.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
@@ -194,7 +194,7 @@ export const query = graphql`
         }
       }
     },
-    Slide3: file(relativePath: { eq: "gallery/3.jpg" }) {
+    Slide3: file(relativePath: { eq: "wakacje/3.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
@@ -203,7 +203,7 @@ export const query = graphql`
         }
       }
     },
-    Slide4: file(relativePath: { eq: "gallery/4.jpg" }) {
+    Slide4: file(relativePath: { eq: "wakacje/4.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
@@ -212,7 +212,7 @@ export const query = graphql`
         }
       }
     },
-    Slide5: file(relativePath: { eq: "gallery/5.jpg" }) {
+    Slide5: file(relativePath: { eq: "wakacje/5.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
@@ -221,7 +221,7 @@ export const query = graphql`
         }
       }
     },
-    Slide6: file(relativePath: { eq: "gallery/6.jpg" }) {
+    Slide6: file(relativePath: { eq: "wakacje/6.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
@@ -230,7 +230,7 @@ export const query = graphql`
         }
       }
     },
-    Slide7: file(relativePath: { eq: "gallery/7.jpg" }) {
+    Slide7: file(relativePath: { eq: "wakacje/7.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
@@ -239,7 +239,7 @@ export const query = graphql`
         }
       }
     },
-    Slide8: file(relativePath: { eq: "gallery/8.jpg" }) {
+    Slide8: file(relativePath: { eq: "wakacje/8.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
@@ -248,7 +248,7 @@ export const query = graphql`
         }
       }
     },
-    Slide9: file(relativePath: { eq: "gallery/9.jpg" }) {
+    Slide9: file(relativePath: { eq: "wakacje/9.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64

@@ -3,6 +3,8 @@ import React from "react"
 import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 
+import { LinkStyled } from "./Link.styled"
+
 import Img from 'gatsby-image'
 
 import Header from "./sectionHeader"
@@ -34,67 +36,22 @@ const Sala = ({ background }) => {
       <SalaBackgroundOverlay />
       <SalaBackground>
         <SalaInfo>
-          <Header title="Nasza" subtitle="Sala treningowa" isInverted />
+          <Header title="Główna" subtitle="baza półkolonii" isInverted />
           <SalaText className="text" inverted>
-            CKB Mrągowo mieście się w sali przy ul. Lubleskie 44. Do dyspozycji
-            studentów jest lokal o piwerzchni blisko 200 m2, w nim dwie sale
-            treningowe po 60 m każda, recepcja oraz poczekalnia z wygodną
-            kanapą, toaleta i dwie szatnie
+            Główną bazą półkolonii jest siedziba 
             <br />
+            MSR przy ul. Mrongowiusza 1 (stadion miejski).
             <br />
-            - Odważniki serii CKB PRO i Girya Fitness w zakresie od 4 kg do 48
-            kg <br />
-            - Sztangi i obciążenie do 200 kg <br />
-            - Obciążenie gumowe do 180 kg <br />
-            - Poręcze przenośne do dipów <br />
-            - Drążki ścienne <br />
-            - Koła gimnastyczne i TRX <br />- Sprzęt do treningu motorycznego i
-            funkcjonalnego
+            Tu odbywa się zbiórka i odbiór dzieci, oraz obiad na koniec dnia.
           </SalaText>
-
-          {/* <LinkStyled className="subtitle bold" inverted>Zapisz sie na zajecia</LinkStyled> */}
+          <SalaText className="text" inverted>
+            Zadzwoń i zapisz Swoje dziecko na Sportowe Wakacje
+          </SalaText>
+          <LinkStyled className="subtitle bold" inverted href="tel:+48508378847" >ZADZWOŃ: +48 508 378 847</LinkStyled>
+          <br />
+          <br />
+          <br />
         </SalaInfo>
-        <SalaIcons>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>5kg x 4
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>8kg x 14
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>10kg x 4
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>12kg x 14
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>8 x 24kg
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>16kg x 8
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>20kg x 6
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>24kg x 6
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>28kg x 2
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>32kg x 2
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>36kg x 2
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>40kg
-          </SalaIconElement>
-          <SalaIconElement>
-            <i>{kettleBellIcon}</i>48kg
-          </SalaIconElement>
-        </SalaIcons>
       </SalaBackground>
     </SalaContainer>
   )
