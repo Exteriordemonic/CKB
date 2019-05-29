@@ -10,7 +10,7 @@ import { Link } from "gatsby"
 import SuperNav from "../SuperNav"
 
 // import logo
-import logo from "../../images/logo.png"
+import logo from "../../images/wakacje/loogo.png"
 
 import Header from "./Header"
 

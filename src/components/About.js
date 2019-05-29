@@ -66,10 +66,10 @@ const AboutImages = styled.div`
 `
 
 const AboutImage1 = styled(Img)`
-  position: absolute !important;
-  width: 220px;
-  height: 300px;
-  right: 0;
+  position: relative !important;
+  width: 400px;
+  height: 600px;
+  left: 10%;
   top: 0;
   object-fit: cover;
   object-position: center;
@@ -78,17 +78,30 @@ const AboutImage1 = styled(Img)`
   @media (max-width: 768px) {
     display: none;
   }
+
+  &:hover {
+    & + .gatsby-image-wrapper {
+      z-index: 1000;
+      transform: scale(1);
+      right: calc(10% + 102px);
+      opacity: 1;
+    }
+  }
 `
 
 const AboutImage2 = styled(Img)`
   position: absolute !important;
-  right: 100px;
-  top: 100px;
-  width: 220px;
-  height: 320px;
+  right: 10%;
+  top: 0;
+  width: 400px;
+  height: 600px;
   z-index: 3;
   object-fit: cover;
   object-position: center;
+  transform: scale(0.8);
+  transition: 0.4s;
+  pointer-events: none;
+  opacity: 0;
 
   @media (max-width: 768px) {
     display: none;
