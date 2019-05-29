@@ -107,7 +107,7 @@ export default class Hero extends Component {
           </CSSTransition>
         </TransitionGroup>
         <HeroWrapper.Title as="span" className="headline">
-          HARDSTYLE
+          Sportowe Wakacje
         </HeroWrapper.Title>
         <Navigation />
 

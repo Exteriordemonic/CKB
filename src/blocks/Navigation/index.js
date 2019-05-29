@@ -7,22 +7,19 @@ const Nav = () => (
   <Navigation>
     <Navigation.List>
       <Navigation.Item className="subtitle">
-        <Link to="/sila">Siła</Link>
+        Aktywny czas
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        <Link to="/wytrzymalosc">WYTRZYMAŁOŚĆ</Link>
+        Gry i zabawy
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        <Link to="/mobilnosc">Mobilność</Link>
+        Integracja
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        <Link to="/zdrowie">Zdrowie</Link>
+        Wycieczki rowerowe
       </Navigation.Item>
       <Navigation.Item className="subtitle">
-        <Link to="/sylwetka">Sylwetka</Link>
-      </Navigation.Item>
-      <Navigation.Item className="subtitle">
-        <Link to="/energia">Energia</Link>
+        Atrakcje wodne
       </Navigation.Item>
     </Navigation.List>
   </Navigation>
