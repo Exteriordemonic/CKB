@@ -93,7 +93,7 @@ class IndexPage extends Component {
           ]}
         />
         <Header supernav={this.state.supernav} img={[ckb, mct, kolonia]} />
-        <Hero img={[heroOne, heroTwo, heroThree]}  smallSlider={smallSlider}/>
+        <Hero img={[heroOne, heroTwo]}  smallSlider={smallSlider}/>
         <SkewBackground>
           <About img={AboutImages}/>
           <PoziomCardSection
@@ -147,7 +147,7 @@ export const query = graphql`
         }
       }
     },
-    heroOne: file(relativePath: { eq: "kb-1.jpg" }) {
+    heroOne: file(relativePath: { eq: "wakacje/hero-1.jpg" }) {
       childImageSharp {
         fixed(width: 1920) {
           base64
@@ -159,7 +159,7 @@ export const query = graphql`
         }
       }
     },
-    heroTwo: file(relativePath: { eq: "kb-3.jpg" }) {
+    heroTwo: file(relativePath: { eq: "wakacje/hero-2.jpg" }) {
       childImageSharp {
         fixed(width: 1920) {
           base64
