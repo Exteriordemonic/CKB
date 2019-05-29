@@ -58,6 +58,14 @@ class IndexPage extends Component {
     const G9 = this.props.data.Slide9.childImageSharp.fixed;
     const slider = [G7, G9, G5, G4, G8, G2, G1, G6, G3];
 
+    const ss1 = this.props.data.Ss1.childImageSharp.fixed;
+    const ss2 = this.props.data.Ss2.childImageSharp.fixed;
+    const ss3 = this.props.data.Ss3.childImageSharp.fixed;
+    const ss4 = this.props.data.Ss4.childImageSharp.fixed;
+    const ss5 = this.props.data.Ss5.childImageSharp.fixed;
+
+    const smallSlider = [ss1, ss2, ss3, ss4, ss5];
+
     return (
       <Layout supernav={this.state.supernav}>
         <SEO
@@ -78,7 +86,7 @@ class IndexPage extends Component {
           ]}
         />
         <Header supernav={this.state.supernav} img={[ckb, mct, kolonia]} />
-        <Hero img={[heroOne, heroTwo, heroThree]} />
+        <Hero img={[heroOne, heroTwo, heroThree]}  smallSlider={smallSlider}/>
         <SkewBackground>
           <About />
           <PoziomCardSection
@@ -241,6 +249,51 @@ export const query = graphql`
       }
     },
     Slide9: file(relativePath: { eq: "gallery/9.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Ss1: file(relativePath: { eq: "tgu/1.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Ss2: file(relativePath: { eq: "tgu/2.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Ss3: file(relativePath: { eq: "tgu/3.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Ss4: file(relativePath: { eq: "tgu/4.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Ss5: file(relativePath: { eq: "tgu/5.jpg" }) {
       childImageSharp {
         fixed(width: 400, quality: 100) {
           base64
