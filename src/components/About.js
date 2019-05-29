@@ -18,23 +18,16 @@ const About = props => {
       <AboutStyled>
         <AboutInfo>
           <TitleStyled className="subtitle bold" minor>
-            {" "}
+            Półkolonie
           </TitleStyled>
           <AboutTitle className="title bold">
-            Centrum Ketllebell Mrągowo
+            na sportowo
           </AboutTitle>
           <AboutText className="text">
-            CKB Mrągowo to pierwszy w Mrągowie i powiecie klub prowadzący
-            zajęcia Hardstyle Kettlebell wg. systemu StrongFirst przez
-            Certyfikowanego Instruktora StrongFirst SFG1. Jesteśmy jedyną szkołą
-            siły w promieniu 50 km praktykującą trening z odważnikami kulowymi
-            według Pavla Tsatsoulina twórcy i założyciela StrongFirst. Tu
-            poznasz magię i świat odważników kulowych które potrafią odmienić
-            życie każdego w zamian za wytrwałą i systematyczną pracę na
-            zajęciach. Zostań studentem siły i dołącz do CKB Mrągowo
+            Oferta skierowana do dzieci w wieku 6-12 lat. W zależności od pory roku zapraszamy na półkolonie latem pod hasłem SPORTOWE WAKACJE, oraz zimą SPORTOWE FERIE. Wydarzenie organizowane jest przez Mrągowskie Centrum Treningowe i Mrągowskie Stowarzyszenie Rowerowe.
           </AboutText>
-          <LinkStyled className="subtitle bold" to="/strongfirst">
-            Czym jest StrongFirst?
+          <LinkStyled className="subtitle bold" to="/kolonie">
+            Dowiedz się więcej
           </LinkStyled>
         </AboutInfo>
         <AboutImages>
