@@ -1,9 +1,13 @@
 import styled from "styled-components"
 import React from "react"
+
+import Img from 'gatsby-image'
+
 import { TitleStyled } from "./Title.styled"
 import { LinkStyled } from "./Link.styled"
 import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
+
 
 import CKB from "../images/kb-2.jpg"
 import MCT from "../images/kb-3.jpg"
@@ -34,8 +38,8 @@ const About = props => {
           </LinkStyled>
         </AboutInfo>
         <AboutImages>
-          <AboutImage1 src={CKB} />
-          <AboutImage2 src={MCT} />
+          <AboutImage1 fixed={props.img[0]} />
+          <AboutImage2 fixed={props.img[1]} />
         </AboutImages>
       </AboutStyled>
     </ContainerStyled>
@@ -68,8 +72,8 @@ const AboutImages = styled.div`
   position: relative;
 `
 
-const AboutImage1 = styled.img`
-  position: absolute;
+const AboutImage1 = styled(Img)`
+  position: absolute !important;
   width: 220px;
   height: 300px;
   right: 0;
@@ -83,8 +87,8 @@ const AboutImage1 = styled.img`
   }
 `
 
-const AboutImage2 = styled.img`
-  position: absolute;
+const AboutImage2 = styled(Img)`
+  position: absolute !important;
   right: 100px;
   top: 100px;
   width: 220px;

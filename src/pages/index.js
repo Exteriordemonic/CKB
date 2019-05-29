@@ -63,8 +63,13 @@ class IndexPage extends Component {
     const ss3 = this.props.data.Ss3.childImageSharp.fixed;
     const ss4 = this.props.data.Ss4.childImageSharp.fixed;
     const ss5 = this.props.data.Ss5.childImageSharp.fixed;
-
+    
     const smallSlider = [ss1, ss2, ss3, ss4, ss5, ss4, ss3, ss2, ss1];
+    
+    const About1 = this.props.data.About1.childImageSharp.fixed;
+    const About2 = this.props.data.About2.childImageSharp.fixed;
+
+    const AboutImages = [About1, About2];
 
     return (
       <Layout supernav={this.state.supernav}>
@@ -88,7 +93,7 @@ class IndexPage extends Component {
         <Header supernav={this.state.supernav} img={[ckb, mct, kolonia]} />
         <Hero img={[heroOne, heroTwo, heroThree]}  smallSlider={smallSlider}/>
         <SkewBackground>
-          <About />
+          <About img={AboutImages}/>
           <PoziomCardSection
             selectCard={this.selectCardHandle}
             card={this.state.card}
@@ -294,6 +299,24 @@ export const query = graphql`
       }
     },
     Ss5: file(relativePath: { eq: "tgu/5.jpg" }) {
+      childImageSharp {
+        fixed(width: 800, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    About1: file(relativePath: { eq: "kb-2.jpg" }) {
+      childImageSharp {
+        fixed(width: 800, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    About2: file(relativePath: { eq: "kb-3.jpg" }) {
       childImageSharp {
         fixed(width: 800, quality: 100) {
           base64
