@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 
+import Img from 'gatsby-image'
+
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 
 import Slider from "./Slider.js"
@@ -11,7 +13,7 @@ export default class Slide extends Component {
 
     this.state = {
       current: 0,
-      length: this.props.data.length,
+      length: this.props.smallSlider.length,
     }
 
     this.changeSlide = this.changeSlide.bind(this)
@@ -52,7 +54,9 @@ export default class Slide extends Component {
             key={this.props.data[this.state.current]}
             timeout={{ enter: 0, exit: 800 }}
           >
-            <Slider.Image src={this.props.data[this.state.current]} />
+            <Slider.Image src={this.props.data[this.state.current]} >
+              <Img fixed={this.props.smallSlider[this.state.current]} />
+            </Slider.Image>
           </CSSTransition>
         </TransitionGroup>
         {/* <Slider.Navigation>

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Image = styled.img`
+const Image = styled.div`
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -24,6 +24,12 @@ const Image = styled.img`
       opacity: 1;
     }
   }
+
+  .gatsby-image-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
 `
 
 export default Image
