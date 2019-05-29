@@ -94,14 +94,7 @@ class IndexPage extends Component {
         />
         <Header supernav={this.state.supernav} img={[ckb, mct, kolonia]} />
         <Hero img={[heroOne, heroTwo]}  smallSlider={smallSlider}/>
-        <SkewBackground>
-          <About img={AboutImages}/>
-          <PoziomCardSection
-            selectCard={this.selectCardHandle}
-            card={this.state.card}
-          />
-          <Poziom card={this.state.card} />
-        </SkewBackground>
+        <About img={AboutImages}/>
         <Sala background={SalaImg} />
         <ImagesGrid images={slider} />
       </Layout>
