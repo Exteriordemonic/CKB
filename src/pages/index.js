@@ -309,7 +309,7 @@ export const query = graphql`
         }
       }
     },
-    About1: file(relativePath: { eq: "kb-2.jpg" }) {
+    About1: file(relativePath: { eq: "wakacje/wakacje.jpg" }) {
       childImageSharp {
         fixed(width: 800, quality: 100) {
           base64
@@ -318,7 +318,7 @@ export const query = graphql`
         }
       }
     },
-    About2: file(relativePath: { eq: "kb-3.jpg" }) {
+    About2: file(relativePath: { eq: "wakacje/ferie.jpg" }) {
       childImageSharp {
         fixed(width: 800, quality: 100) {
           base64
