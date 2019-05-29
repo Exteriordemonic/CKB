@@ -71,6 +71,8 @@ class IndexPage extends Component {
 
     const AboutImages = [About1, About2];
 
+    const SalaImg = this.props.data.SalaImg.childImageSharp.fixed;
+
     return (
       <Layout supernav={this.state.supernav}>
         <SEO
@@ -317,6 +319,15 @@ export const query = graphql`
       }
     },
     About2: file(relativePath: { eq: "kb-3.jpg" }) {
+      childImageSharp {
+        fixed(width: 800, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    SalaImg: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fixed(width: 800, quality: 100) {
           base64

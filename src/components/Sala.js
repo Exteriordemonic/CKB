@@ -3,6 +3,8 @@ import React from "react"
 import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 
+import Img from 'gatsby-image'
+
 import Header from "./sectionHeader"
 
 const Sala = ({ background }) => {
@@ -27,7 +29,8 @@ const Sala = ({ background }) => {
   // )
 
   return (
-    <SalaContainer small background={background}>
+    <SalaContainer small>
+      <SalaBackgroundImg fixed={background} />
       <SalaBackgroundOverlay />
       <SalaBackground>
         <SalaInfo>
@@ -98,7 +101,6 @@ const Sala = ({ background }) => {
 }
 
 const SalaContainer = styled(ContainerStyled)`
-  background: url(${props => props.background});
   background-size: cover;
   background-position: center;
   position: relative;
@@ -126,6 +128,16 @@ const SalaBackground = styled.div`
 `
 const SalaBackgroundOverlay = styled.div`
   position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #707070;
+  opacity: 0.6;
+  z-index: 2;
+  left: 0;
+`
+
+const SalaBackgroundImg = styled(Img)`
+  position: absolute !important;
   width: 100%;
   height: 100%;
   background: #707070;
