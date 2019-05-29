@@ -327,7 +327,7 @@ export const query = graphql`
         }
       }
     },
-    SalaImg: file(relativePath: { eq: "hero.jpg" }) {
+    SalaImg: file(relativePath: { eq: "wakacje/sala.jpg" }) {
       childImageSharp {
         fixed(width: 800, quality: 100) {
           base64
