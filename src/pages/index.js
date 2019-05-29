@@ -78,18 +78,7 @@ class IndexPage extends Component {
         <SEO
           title="Strona główna"
           keywords={[
-            `strongfirst polska`,
-            `strongfirst program`,
-            `Trening`,
-            `sylwetka`,
-            `siła`,
-            `StrongFirst`,
-            `kettlebells`,
-            `kettlebell olsztyn`,
-            `kettlebell mragowo`,
-            `kettlebell swing`,
-            `kettlebell hardstyle`,
-            `	kettlebell ckb`,
+            'półkoloenie dla dzieci'
           ]}
         />
         <Header supernav={this.state.supernav} img={[ckb, mct, kolonia]} />

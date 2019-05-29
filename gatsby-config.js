@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `CKB`,
-    description: `Trennigni Kettlebell StrongFirst`,
+    title: `Sportowe Wakacje`,
+    description: ``,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#c99139`,
         theme_color: `#c99139`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/wakacje/loogo.png`, // This path is relative to the root of the site.
       },
     },
     {

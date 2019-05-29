@@ -36,7 +36,7 @@ const Sala = ({ background }) => {
       <SalaBackgroundOverlay />
       <SalaBackground>
         <SalaInfo>
-          <Header title="Główna" subtitle="baza półkolonii" isInverted />
+          <Header title="GłÓWNA" subtitle="BAZA PÓŁKOLONII" isInverted />
           <SalaText className="text" inverted>
             Główną bazą półkolonii jest siedziba 
             <br />

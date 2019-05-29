@@ -29,20 +29,9 @@ class Sila extends Component {
         return (
             <Layout supernav={this.props.supernav}>
                 <SEO
-                    title="Siła"
+                    title="Kolonie"
                     keywords={[
-                        `strongfirst polska`,
-                        `strongfirst program`,
-                        `Trening`,
-                        `sylwetka`,
-                        `siła`,
-                        `StrongFirst`,
-                        `kettlebells`,
-                        `kettlebell olsztyn`,
-                        `kettlebell mragowo`,
-                        `kettlebell swing`,
-                        `kettlebell hardstyle`,
-                        `	kettlebell ckb`,
+                        'kolonie mrągowo'
                     ]}
                 />
                 <Header supernav={this.props.supernav} img={[ckb, mct, kolonia]} />

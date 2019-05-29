@@ -6,7 +6,7 @@ import styled from "styled-components"
 const Data = [
   {
     image: "",
-    link: "/",
+    link: "http://ckb-mragowo.pl/",
     title: "CKB",
   },
   {
@@ -16,7 +16,7 @@ const Data = [
   },
   {
     image: "",
-    link: "http://polkolonie-mazury.pl/",
+    link: "/",
     title: "Półkolonie",
   },
 ]
