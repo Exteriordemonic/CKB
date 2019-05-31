@@ -107,7 +107,7 @@ export const query = graphql`
         }
       }
     }
-    imageTwo: file(relativePath: { eq: "tgu/3.jpg" }) {
+    imageTwo: file(relativePath: { eq: "tgu/1.jpg" }) {
       childImageSharp {
         fixed(width: 600) {
           src

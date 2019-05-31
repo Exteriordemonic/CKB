@@ -36,7 +36,7 @@ class Strongfirst extends Component {
           ]}
         />
         <Header supernav={false} img={[ckb, mct, kolonia]} />
-        <SmallHero title="Strongfirst" img={imageOne} reverse />
+        <SmallHero title="StrongFirst" img={imageOne} reverse />
         <Content img={imageTwo}>
           <h2>Czym jest StrongFirst</h2>
           <p className="text">
