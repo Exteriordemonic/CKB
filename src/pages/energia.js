@@ -39,7 +39,7 @@ class Energia extends Component {
         <SmallHero title="Energia" img={imageOne} />
         <Content img={imageTwo}>
           <h2>Energia</h2>
-          <p className="text">
+          <p className="text" style={{ marginBottom: '200px'}}>
             Poznaj moc treningu z odważnikami kulowymi, każda sesja to ogromna
             dawka pozytywnej energii i wzrost poziomu endorfin. Hardstyle
             Kettlebell odmieni Twoje podejście do kwestii treningu i pokaże czym
