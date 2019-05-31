@@ -36,7 +36,7 @@ class Zdrowie extends Component {
           ]}
         />
         <Header supernav={false} img={[ckb, mct, kolonia]} />
-        <SmallHero title="ZDROWIE" img={imageOne} />
+        <SmallHero title="ZDROWIE" img={imageOne} reverse />
         <Content img={imageTwo}>
           <h2>ZDROWY KRĘGOSŁUP</h2>
           <p className="text bold">
