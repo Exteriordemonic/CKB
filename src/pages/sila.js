@@ -47,7 +47,7 @@ class Sila extends Component {
         />
         <Header supernav={this.props.supernav} img={[ckb, mct, kolonia]} />
         <SmallHero title="DEFINICJA SIŁY" img={imageOne} />
-        <Content img={imageTwo}>
+        <Content img={imageTwo} style={{ marginBottom: '100px' }}>
           <h2>Siła jest umiejętnością</h2>
           <p className="text">
             Siła to fundamentalna zdolność i podstawa rozwoju pozostałych
@@ -107,7 +107,7 @@ export const query = graphql`
         }
       }
     }
-    imageTwo: file(relativePath: { eq: "tgu/1.jpg" }) {
+    imageTwo: file(relativePath: { eq: "podstrony/sila.jpg" }) {
       childImageSharp {
         fixed(width: 600) {
           src
