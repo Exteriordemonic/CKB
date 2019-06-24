@@ -14,8 +14,12 @@ import PoziomCardSection from "../components/PoziomCardSection"
 import Poziom from "../components/Poziom"
 import ImagesGrid from "../components/ImagesGrid"
 import Sala from "../components/Sala"
+import Wiedza from "../components/Wiedza"
+import References from "../components/references"
 
 import SalaImg from "../images/hero.jpg"
+
+import facebook from '../images/facebook.png'
 
 class IndexPage extends Component {
   constructor(props) {
@@ -73,6 +77,8 @@ class IndexPage extends Component {
 
     const SalaImg = this.props.data.SalaImg.childImageSharp.fixed;
 
+    
+
     return (
       <Layout supernav={this.state.supernav}>
         <SEO
@@ -102,8 +108,21 @@ class IndexPage extends Component {
           />
           <Poziom card={this.state.card} />
         </SkewBackground>
+        <References ></References>
         <Sala background={SalaImg} />
+        <Wiedza />
         <ImagesGrid images={slider} />
+        <section className="contact">
+          <h2 className="headline">Kontakt</h2>
+          <p className="title">
+            Tel: <a href="tel:+48508378847">+48 508 378 847</a> 
+            <br/>
+            Mail: <a href="mailto:ckbmragowo@gmail.com">ckbmragowo@gmail.com</a>  
+          </p>
+          <a href="https://www.facebook.com/CKBMragowo">
+            <img src={facebook} alt="facebook"/>
+          </a>
+        </section>
       </Layout>
     )
   }

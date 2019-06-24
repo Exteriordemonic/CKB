@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 const Card = props => {
   return (
-    <CardStyled as="a" href="https://www.facebook.com/pg/MCTreningowe">
+    <CardStyled as="a" href={props.href} taget="_blank">
       <CardImage src={props.image} cover={props.cover} />
       <CardTitle className="subtitle bold">{props.title}</CardTitle>
       <CardText className="text">{props.children}</CardText>

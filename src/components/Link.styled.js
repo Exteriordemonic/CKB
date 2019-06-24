@@ -13,4 +13,9 @@ export const LinkStyled = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+    letter-spacing: 4px;
+  }
 `

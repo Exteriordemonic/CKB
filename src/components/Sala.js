@@ -68,9 +68,6 @@ const Sala = ({ background }) => {
             <i>{kettleBellIcon}</i>12kg x 14
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>8 x 24kg
-          </SalaIconElement>
-          <SalaIconElement>
             <i>{kettleBellIcon}</i>16kg x 8
           </SalaIconElement>
           <SalaIconElement>
@@ -89,10 +86,10 @@ const Sala = ({ background }) => {
             <i>{kettleBellIcon}</i>36kg x 2
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>40kg
+            <i>{kettleBellIcon}</i>40kg x 1
           </SalaIconElement>
           <SalaIconElement>
-            <i>{kettleBellIcon}</i>48kg
+            <i>{kettleBellIcon}</i>48kg x 1
           </SalaIconElement>
         </SalaIcons>
       </SalaBackground>

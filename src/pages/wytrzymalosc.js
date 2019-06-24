@@ -108,7 +108,7 @@ export const query = graphql`
         }
       }
     }
-    imageTwo: file(relativePath: { eq: "tgu/2.jpg" }) {
+    imageTwo: file(relativePath: { eq: "swing.jpg" }) {
       childImageSharp {
         fixed(width: 1920) {
           base64

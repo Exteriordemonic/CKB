@@ -20,7 +20,7 @@ export default class SmallHero extends Component {
         <Img fixed={this.props.img} className="hero__img" />
         <h1 className="hero__title headline">{this.props.title}</h1>
         <Link className="hero__link subtitle" to="/">
-          Powrót do storny głównej
+          Powrót do strony głównej
         </Link>
       </section>
     )

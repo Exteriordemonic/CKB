@@ -107,7 +107,7 @@ export const query = graphql`
         }
       }
     }
-    imageTwo: file(relativePath: { eq: "podstrony/sila.jpg" }) {
+    imageTwo: file(relativePath: { eq: "sila.jpg" }) {
       childImageSharp {
         fixed(width: 600) {
           src

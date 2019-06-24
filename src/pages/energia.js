@@ -36,7 +36,7 @@ class Energia extends Component {
           ]}
         />
         <Header supernav={false} img={[ckb, mct, kolonia]} />
-        <SmallHero title="Energia" img={imageOne} />
+        <SmallHero title="Energia" img={imageOne} reverse />
         <Content img={imageTwo}>
           <h2>Energia</h2>
           <p className="text" style={{ marginBottom: '200px'}}>
@@ -89,7 +89,7 @@ export const query = graphql`
         }
       }
     }
-    imageOne: file(relativePath: { eq: "pages/energia.jpg" }) {
+    imageOne: file(relativePath: { eq: "pages/off-energia.jpg" }) {
       childImageSharp {
         fixed(width: 1920) {
           base64
@@ -101,7 +101,7 @@ export const query = graphql`
         }
       }
     }
-    imageTwo: file(relativePath: { eq: "kb-3.jpg" }) {
+    imageTwo: file(relativePath: { eq: "pages/energia.jpg" }) {
       childImageSharp {
         fixed(width: 1920) {
           base64
