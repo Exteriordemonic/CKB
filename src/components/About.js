@@ -83,7 +83,7 @@ const AboutImage1 = styled(Img)`
   z-index: 2;
 
   @media (max-width: 768px) {
-    display: none;
+    display: none !important;
   }
 `
 
@@ -98,7 +98,7 @@ const AboutImage2 = styled(Img)`
   object-position: center;
 
   @media (max-width: 768px) {
-    display: none;
+    display: none !important;
   }
 `
 

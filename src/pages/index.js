@@ -16,6 +16,7 @@ import ImagesGrid from "../components/ImagesGrid"
 import Sala from "../components/Sala"
 import Wiedza from "../components/Wiedza"
 import References from "../components/references"
+import Opinions from "../components/opinions"
 
 import SalaImg from "../images/hero.jpg"
 
@@ -76,6 +77,7 @@ class IndexPage extends Component {
     const AboutImages = [About1, About2];
 
     const SalaImg = this.props.data.SalaImg.childImageSharp.fixed;
+    const FbBG = this.props.data.FbBG.childImageSharp.fixed;
 
     
 
@@ -108,7 +110,8 @@ class IndexPage extends Component {
           />
           <Poziom card={this.state.card} />
         </SkewBackground>
-        <References ></References>
+        <References background={FbBG} />
+        <Opinions />
         <Sala background={SalaImg} />
         <Wiedza />
         <ImagesGrid images={slider} />
@@ -347,6 +350,15 @@ export const query = graphql`
       }
     },
     SalaImg: file(relativePath: { eq: "hero.jpg" }) {
+      childImageSharp {
+        fixed(width: 800, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    FbBG: file(relativePath: { eq: "dolacz-do-nas.jpg" }) {
       childImageSharp {
         fixed(width: 800, quality: 100) {
           base64

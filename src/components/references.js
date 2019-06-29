@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import Img from 'gatsby-image'
+
 import { ContainerStyled } from "../components/Container.styled"
 import Header from "./sectionHeader"
 
@@ -34,6 +36,9 @@ export default class References extends Component {
                   <img src={fbFind} alt="Znajdź i polub nas na facebooku"/>
                 </a>
               </div>
+            </div>
+            <div className="references-block references-block--big">
+              <Img className="references-block__bg" fixed={this.props.background} />
             </div>
           </div>
         </ContainerStyled>
