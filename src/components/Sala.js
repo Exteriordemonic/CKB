@@ -176,7 +176,7 @@ const SalaIconElement = styled.div`
   padding: 0 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 `
 

@@ -17,10 +17,13 @@ import Sala from "../components/Sala"
 import Wiedza from "../components/Wiedza"
 import References from "../components/references"
 import Opinions from "../components/opinions"
+import Contact from "../components/contact"
 
 import SalaImg from "../images/hero.jpg"
 
 import facebook from '../images/facebook.png'
+import phone from '../images/phone-call.png'
+import mail from '../images/mail.png'
 
 class IndexPage extends Component {
   constructor(props) {
@@ -115,17 +118,7 @@ class IndexPage extends Component {
         <Sala background={SalaImg} />
         <Wiedza />
         <ImagesGrid images={slider} />
-        <section className="contact">
-          <h2 className="headline">Kontakt</h2>
-          <p className="title">
-            Tel: <a href="tel:+48508378847">+48 508 378 847</a> 
-            <br/>
-            Mail: <a href="mailto:ckbmragowo@gmail.com">ckbmragowo@gmail.com</a>  
-          </p>
-          <a href="https://www.facebook.com/CKBMragowo">
-            <img src={facebook} alt="facebook"/>
-          </a>
-        </section>
+        <Contact facebook={facebook} phone={phone} mail={mail} />
       </Layout>
     )
   }
