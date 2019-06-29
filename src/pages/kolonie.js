@@ -5,6 +5,8 @@ import cookie from "react-cookies"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import ImagesGrid from "../components/ImagesGrid"
+
 import Header from "../common/navigation"
 import SmallHero from "../components/smallHero"
 import Content from "../components/content"
@@ -25,6 +27,17 @@ class Sila extends Component {
         const kolonia = this.props.data.kolonia.childImageSharp.fixed
         const imageOne = this.props.data.imageOne.childImageSharp.fixed
         const imageTwo = this.props.data.imageTwo.childImageSharp.fixed
+
+        const G1 = this.props.data.Slide1.childImageSharp.fixed;
+        const G2 = this.props.data.Slide2.childImageSharp.fixed;
+        const G3 = this.props.data.Slide3.childImageSharp.fixed;
+        const G4 = this.props.data.Slide4.childImageSharp.fixed;
+        const G5 = this.props.data.Slide5.childImageSharp.fixed;
+        const G6 = this.props.data.Slide6.childImageSharp.fixed;
+        const G7 = this.props.data.Slide7.childImageSharp.fixed;
+        const G8 = this.props.data.Slide8.childImageSharp.fixed;
+        const G9 = this.props.data.Slide9.childImageSharp.fixed;
+        const slider = [G7, G5, G9, G4, G8, G2, G1, G6, G3];
 
         return (
             <Layout supernav={this.props.supernav}>
@@ -108,6 +121,7 @@ class Sila extends Component {
                         </li>
                     </ul>
                 </Content>
+                <ImagesGrid images={slider} />
             </Layout>
         )
     }
@@ -160,6 +174,87 @@ export const query = graphql`
         }
       }
     }
+    Slide1: file(relativePath: { eq: "wakacje/1.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide2: file(relativePath: { eq: "wakacje/2.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide3: file(relativePath: { eq: "wakacje/3.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide4: file(relativePath: { eq: "wakacje/4.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide5: file(relativePath: { eq: "wakacje/5.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide6: file(relativePath: { eq: "wakacje/6.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide7: file(relativePath: { eq: "wakacje/7.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide8: file(relativePath: { eq: "wakacje/8.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+    Slide9: file(relativePath: { eq: "wakacje/9.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
   }
 `
 

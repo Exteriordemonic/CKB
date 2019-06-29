@@ -8,23 +8,38 @@ import { ContainerStyled } from "../components/Container.styled"
 
 import Header from "./sectionHeader"
 
-import C1 from "../images/logo.png"
+import C1 from "../images/wakacje/kamil.jpg"
+import C2 from "../images/wakacje/radoslaw.jpg"
 
 const Wiedza = () => {
   return (
     <WiedzaStyled>
       <ContainerStyled>
-        <Header title="Sekcja" subtitle="Wiedzy" />
+        <Header title="Zespół" subtitle="Nasza kadra" />
       </ContainerStyled>
       <ContainerStyled small>
         <CardsContainer>
           <Card
             as="a"
             href="https://www.facebook.com/CKBMragowo/"
-            title="Facebook"
+            title="Kamil Kwiatek"
             image={C1}
           >
-            Zapraszamy na nasz funpage na faceboku
+            Kierownik Półkolonii
+            <br />
+            <br />
+            <a href="tel:508378847">📞 508 378 847</a>
+          </Card>
+          <Card
+            as="a"
+            href="https://www.facebook.com/CKBMragowo/"
+            title="Radosław Parzych"
+            image={C2}
+          >
+            główny opiekun/instruktor
+            <br />
+            <br />
+            <a href="tel:505130326">📞 505 130 326</a>
           </Card>
         </CardsContainer>
       </ContainerStyled>
@@ -38,8 +53,8 @@ const WiedzaStyled = styled.section`
 
 const CardsContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
   padding: 60px 0;
 
   @media (max-width: 1024px) {

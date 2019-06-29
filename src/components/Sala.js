@@ -6,6 +6,7 @@ import { ContainerStyled } from "../components/Container.styled"
 import { LinkStyled } from "./Link.styled"
 
 import Img from 'gatsby-image'
+import ImagesGrid from "../components/ImagesGrid"
 
 import Header from "./sectionHeader"
 
@@ -36,7 +37,7 @@ const Sala = ({ background }) => {
       <SalaBackgroundOverlay />
       <SalaBackground>
         <SalaInfo>
-          <Header title="GłÓWNA" subtitle="BAZA PÓŁKOLONII" isInverted />
+          <Header title="Sportowe wakacje" subtitle="BAZA PÓŁKOLONII" isInverted />
           <SalaText className="text" inverted>
             Główną bazą półkolonii jest siedziba 
             <br />

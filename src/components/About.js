@@ -10,7 +10,7 @@ import { ContainerStyled } from "../components/Container.styled"
 
 
 import CKB from "../images/kb-2.jpg"
-import MCT from "../images/kb-3.jpg"
+import LOGOS from "../images/logos.png"
 
 const About = props => {
   return (
@@ -25,6 +25,7 @@ const About = props => {
           </AboutTitle>
           <AboutText className="text">
             Oferta skierowana do dzieci w wieku 6-12 lat. W zależności od pory roku zapraszamy na półkolonie latem pod hasłem SPORTOWE WAKACJE, oraz zimą SPORTOWE FERIE. Wydarzenie organizowane jest przez Mrągowskie Centrum Treningowe i Mrągowskie Stowarzyszenie Rowerowe.
+            <img src={LOGOS} />
           </AboutText>
           <LinkStyled className="subtitle bold" to="/kolonie">
             Dowiedz się więcej
@@ -59,6 +60,11 @@ const AboutTitle = styled(TitleStyled)`
 
 const AboutText = styled(TextStyled)`
   margin-bottom: 60px;
+
+  img {
+    margin-top: 60px;
+    max-width: 100%;
+  }
 `
 
 const AboutImages = styled.div`

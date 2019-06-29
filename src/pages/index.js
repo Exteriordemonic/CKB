@@ -14,8 +14,15 @@ import PoziomCardSection from "../components/PoziomCardSection"
 import Poziom from "../components/Poziom"
 import ImagesGrid from "../components/ImagesGrid"
 import Sala from "../components/Sala"
+import Contact from "../components/contact"
+import LastEvents from "../components/lastEvents"
+import Wiedza from "../components/wiedza"
 
 import SalaImg from "../images/hero.jpg"
+
+import facebook from '../images/facebook.png'
+import phone from '../images/phone-call.png'
+import mail from '../images/mail.png'
 
 class IndexPage extends Component {
   constructor(props) {
@@ -84,7 +91,10 @@ class IndexPage extends Component {
         <Header supernav={this.state.supernav} img={[ckb, mct, kolonia]} />
         <Hero img={[heroOne, heroTwo]}  smallSlider={smallSlider}/>
         <About img={AboutImages}/>
+        {/* <LastEvents /> */}
+        <Wiedza />
         <Sala background={SalaImg} />
+        <Contact facebook={facebook} phone={phone} mail={mail} />
         <ImagesGrid images={slider} />
       </Layout>
     )

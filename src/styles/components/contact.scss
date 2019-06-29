@@ -1,0 +1,28 @@
+.contact {
+  padding: 10vh 0;
+  text-align: center;
+
+  img {
+    width: 36px;
+    margin: 0 auto;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0 12px;
+      height: auto;
+    }
+  }
+
+  a {
+    display: inline;
+  }
+}

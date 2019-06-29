@@ -1,0 +1,34 @@
+.last-events {
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px; 
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__item {
+    display: flex;
+    height: 40vh;
+    min-height: 300px;
+    background: red;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        display: inline;
+        color: black;
+        font-weight: bold;
+    }
+  }
+}
