@@ -11,6 +11,7 @@ import { ContainerStyled } from "../components/Container.styled"
 
 import CKB from "../images/kb-2.jpg"
 import LOGOS from "../images/logos.png"
+import Fun from "../images/wakacje/funkids.png"
 
 const About = props => {
   return (
@@ -31,10 +32,9 @@ const About = props => {
             Dowiedz się więcej
           </LinkStyled>
         </AboutInfo>
-        <AboutImages>
-          <AboutImage1 fixed={props.img[0]} />
-          <AboutImage2 fixed={props.img[1]} />
-        </AboutImages>
+        <div className="about-img">
+          <img src={Fun} alt="Mrągowo półkolonie dla dzieci, wakacje na sportowo" />
+        </div>
       </AboutStyled>
     </ContainerStyled>
   )

@@ -8,7 +8,7 @@ import { ContainerStyled } from "../components/Container.styled"
 
 import Header from "./sectionHeader"
 
-import C1 from "../images/wakacje/kamil.jpg"
+import C1 from "../images/wakacje/kamil.png"
 import C2 from "../images/wakacje/radoslaw.jpg"
 
 const Wiedza = () => {

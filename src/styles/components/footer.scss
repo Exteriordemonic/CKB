@@ -1,0 +1,46 @@
+.footer {
+  padding: 50px 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__map {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+
+    & > div {
+      position: absolute !important;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__marker {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 900;
+
+    img {
+      max-width: 100%;
+      transform: translate(-50%);
+    }
+  }
+
+  ._2lqh {
+    display: none;
+  }
+}

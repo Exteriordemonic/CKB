@@ -6,12 +6,18 @@
 @import "./components/content";
 @import "./components/contact";
 @import "./components/last-events";
-
+@import "./components/footer";
 
 .container {
   padding: 0 100px;
 
   @media (max-width: 767px) {
     padding: 0 15px;
-  } 
+  }
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
