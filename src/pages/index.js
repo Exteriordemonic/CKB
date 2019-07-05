@@ -10,9 +10,10 @@ import About from "../components/About"
 import PoziomCardSection from "../components/PoziomCardSection"
 import Poziom from "../components/Poziom"
 import ImagesGrid from "../components/ImagesGrid"
-import Wiedza from "../components/Wiedza"
 import Sala from "../components/Sala"
 import Podopieczni from "../components/Podopieczni"
+import References from "../components/references"
+import Header from "../common/navigation"
 
 import { Preloader, Placeholder } from 'react-preloading-screen';
 
@@ -50,10 +51,17 @@ class IndexPage extends Component {
   }
 
   render() {
+    const ckb = this.props.data.ckb.childImageSharp.fixed
+    const mct = this.props.data.mct.childImageSharp.fixed
+    const kolonia = this.props.data.kolonia.childImageSharp.fixed
+
+    const FbBG = this.props.data.FbBG.childImageSharp.fixed;
+
     return(
       <Preloader>
         <Layout>
           <SEO title="Strona główna" keywords={[`Przygotowanie motoryczne`, `mazury`, `mragowo`, 'treningi']} />
+          <Header supernav={this.state.supernav} img={[ckb, mct, kolonia]} />
           <Hero />
           <SkewBackground>
             <About />
@@ -61,8 +69,8 @@ class IndexPage extends Component {
             <Poziom card={this.state.card} />
           </SkewBackground>
           <ImagesGrid images={Images}/>
-          <Wiedza />
           <SkewBackground>
+          <References background={FbBG} />
           <Sala background={SalaImg} />
             <Podopieczni />
           </SkewBackground>
@@ -77,3 +85,53 @@ class IndexPage extends Component {
 
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    ckb: file(relativePath: { eq: "ckb.jpg" }) {
+      childImageSharp {
+        fixed(width: 800) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+        }
+      }
+    },
+    mct: file(relativePath: { eq: "mct.jpg" }) {
+      childImageSharp {
+        fixed(width: 800) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+        }
+      }
+    },
+    kolonia: file(relativePath: { eq: "kolonia.jpg" }) {
+      childImageSharp {
+        fixed(width: 800) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+        }
+      }
+    },
+    FbBG: file(relativePath: { eq: "dolacz-do-nas.jpg" }) {
+      childImageSharp {
+        fixed(width: 800, quality: 100) {
+          base64
+          src
+
+        }
+      }
+    },
+  }
+`

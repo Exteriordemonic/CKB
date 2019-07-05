@@ -58,6 +58,8 @@ const NavbarInner = styled.div`
 
 const NavbarMenuButton = styled.span`
   margin-left: 40px;
+  display: initial !important;
+  
   svg {
     width: 20px;
     height: 20px;

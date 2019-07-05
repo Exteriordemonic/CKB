@@ -6,13 +6,12 @@ const Hamburger = styled.div`
   transition: 0.8s;
   transition-delay: 0.4s;
   position: absolute;
-  left: ${props => props.activ ? '90vw' : `${Gutter*23}px` };
+  left: ${props => props.activ ? '90vw' : `${Gutter*40}px` };
   top: ${Gutter*2.5}px;
   background-color: transparent;
   width: 50px;
   height: 50px;
   z-index: 100;
-  display: none;
 
   &::before,
   &::after {

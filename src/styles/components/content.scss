@@ -1,0 +1,42 @@
+.content {
+  padding: 100px 0;
+
+  &__wrapper {
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__col {
+    position: relative;
+  }
+
+  &__img {
+    position: sticky;
+    top: 0;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    max-height: 400px;
+
+    img {
+      object-fit: contain !important;
+    }
+
+
+    &--2 {
+      opacity: 0;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+}

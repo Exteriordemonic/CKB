@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerStyled = styled.div`
-    padding: ${props => props.small ? '0 6rem' : '0 12rem'};
+    padding: ${props => props.small ? '0 6rem' : '0 6rem'};
     height: 100%;
     max-width: 100%;
 

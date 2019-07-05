@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import {Gutter} from '../../vendors/variables'
+import { Gutter } from '../../vendors/variables'
 
 import Ul from '../../elements/Ul.js'
 
@@ -16,8 +16,7 @@ const Slider = styled(Ul)`
   position: relative;
 
   @media (max-width: 1024px) {
-    width: calc(100vw - ${Gutter * 20}px);
-    padding-top: 60%;
+    display: none;
   }
 `
 

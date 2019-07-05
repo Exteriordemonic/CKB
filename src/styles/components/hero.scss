@@ -1,0 +1,48 @@
+.hero {
+  $root : &;
+  height: 60vh;
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    position: absolute;
+    top: 140px;
+    padding-left: 100px;
+    color: black;
+
+    @media (max-width: 767px) {
+      padding-left: 15px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    padding-left: 100px;
+    color: black;
+    background-color: $special;
+    padding: 50px;
+    font-weight: 900;
+    left: 0;
+
+    @media (max-width: 767px) {
+      padding: 30px 15px;
+    }
+    
+    &:hover {
+      opacity: 1;
+      background-color: lighten( $special, 10% );
+    }
+  }
+
+  &--reverse {
+    #{$root}__title {
+      color: white;
+    }
+  }
+}

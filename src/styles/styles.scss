@@ -1,0 +1,23 @@
+@import "./vendors/reset";
+@import "./vendors/variables";
+
+/** Components */
+@import "./components/hero";
+@import "./components/content";
+@import "./components/contact";
+@import "./components/references";
+@import "./components/opinions";
+@import "./components/footer";
+
+
+.container {
+  padding: 0 100px;
+
+  @media (max-width: 767px) {
+    padding: 0 15px;
+  } 
+}
+
+.special {
+  color: $special;
+}
