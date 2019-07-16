@@ -118,7 +118,6 @@ class IndexPage extends Component {
         <Sala background={SalaImg} />
         <Wiedza />
         <ImagesGrid images={slider} />
-        <Contact facebook={facebook} phone={phone} mail={mail} />
       </Layout>
     )
   }
