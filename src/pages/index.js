@@ -15,7 +15,7 @@ import Poziom from "../components/Poziom"
 import ImagesGrid from "../components/ImagesGrid"
 import Sala from "../components/Sala"
 import Wiedza from "../components/Wiedza"
-import References from "../components/references"
+import Team from "../components/Team"
 import Opinions from "../components/opinions"
 import Contact from "../components/contact"
 
@@ -113,7 +113,7 @@ class IndexPage extends Component {
           />
           <Poziom card={this.state.card} />
         </SkewBackground>
-        <References background={FbBG} />
+        <Team />
         <Opinions />
         <Sala background={SalaImg} />
         <Wiedza />
