@@ -7,8 +7,8 @@ import { LinkStyled } from "./Link.styled"
 import { TextStyled } from "./Text.styled"
 import { ContainerStyled } from "../components/Container.styled"
 
-import CKB from "../images/ckb.jpg" 
-import MCT from "../images/mct.jpg" 
+import CKB from "../images/ckb-no-logo.jpg" 
+import MCT from "../images/mct-no-logo.jpg" 
 
 const About = props => {
   return (

@@ -14,6 +14,7 @@ import Sala from "../components/Sala"
 import Podopieczni from "../components/Podopieczni"
 import References from "../components/references"
 import Header from "../common/navigation"
+import Wiedza from "../components/Wiedza"
 
 import { Preloader, Placeholder } from 'react-preloading-screen';
 
@@ -70,7 +71,7 @@ class IndexPage extends Component {
           </SkewBackground>
           <ImagesGrid images={Images}/>
           <SkewBackground>
-          <References background={FbBG} />
+          <Wiedza />
           <Sala background={SalaImg} />
             <Podopieczni />
           </SkewBackground>
