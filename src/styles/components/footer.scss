@@ -1,5 +1,5 @@
 .footer {
-  padding: 50px 0;
+  padding: 50px 0 0;
 
   &__wrapper {
     display: grid;
@@ -13,6 +13,7 @@
 
   &__title {
     margin-bottom: 50px;
+    font-style: initial;
   }
 
   &__map {
@@ -40,7 +41,11 @@
     }
   }
 
-  ._2lqh {
-    display: none;
+  &__copy {
+    margin: 50px 0 0;
+    background-color: $special;
+    text-align: center;
+    padding: 25px 0;
+    color: white;
   }
 }

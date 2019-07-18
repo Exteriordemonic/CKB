@@ -27,6 +27,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <Preloader>
+        <html lang="pl-PL" />
         <main>{children}</main>
         <Footer />
         <Placeholder>

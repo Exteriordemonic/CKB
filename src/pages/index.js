@@ -94,7 +94,6 @@ class IndexPage extends Component {
         {/* <LastEvents /> */}
         <Wiedza />
         <Sala background={SalaImg} />
-        <Contact facebook={facebook} phone={phone} mail={mail} />
         <ImagesGrid images={slider} />
       </Layout>
     )

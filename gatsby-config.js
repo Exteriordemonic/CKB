@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Sportowe Wakacje`,
-    description: ``,
+    description: `Półkolonie sportowe organizowane dla dzieci na terenie miasta Mrągowo`,
+    language: 'pl-Pl',
     author: `@gatsbyjs`,
   },
   plugins: [

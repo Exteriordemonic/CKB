@@ -35,7 +35,7 @@ const Footer = props => (
             <br />
             Pn-Pt 8:00 - 16:00
             <br />
-            Stadion Miejski mrągowo
+            Stadion Miejski Mrągowo
           </p>
         </address>
         <div className="footer__cell">
@@ -62,6 +62,9 @@ const Footer = props => (
         </div>
       </div>
     </ContainerStyled>
+    <p className="footer__copy">
+      © COPYRIGHTS 2019 MCT
+    </p>
   </footer >
 )
 
